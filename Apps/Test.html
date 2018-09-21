@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8">
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>测试型Cesium</title>
+  <script src="../Build/Cesium/Cesium.js"></script>
+  <style>
+      @import url(../Build/Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+    <div id="cesiumContainer"></div>
+    <script>
+        var viewer = new Cesium.Viewer('cesiumContainer');
+        var NPU = viewer.entities.add({
+            name : 'NPU',
+            polygon : {
+                hierarchy : Cesium.Cartesian3.fromDegreesArray([
+                    108.7655952329,34.0386623003,
+                    108.7646105600,34.0290989808,
+                    108.7547826362,34.0321532767,
+                    108.7551655043,34.0391193963,
+                    ]),
+                height : 0,
+                material : '../Pics/npu.png',
+                outline : true,
+                outlineColor : Cesium.Color.BLACK
+            }
+        });
+        NPU.description = '西北工业大学（以下简称西工大）坐落于陕西西安，是我国唯一一所以同时发展航空' +
+            '、航天、航海（三航）人才培养和科学研究为特色的多科性、研究型、开放式大学，现隶属于工业和信息化部。' +
+            '新中国成立以来，西工大一直是国家重点建设的高校，1960年被国务院确定为全国重点大学，“七' +
+            '五”、“八五”均被国务院列为重点建设的全国15所大学之一，是全国首批设立研究生院的22所高校之一，1' +
+            '995年首批进入“211工程”，2001年进入“985工程”，2017年进入国家“一流大学”建设高校（A类），是“' +
+            '卓越大学联盟”成员高校，先后获得“全国文明单位”、“全国创先争优先进基层党组织”、“全国毕业生就' +
+            '业典型高校”、“全国文明校园”等荣誉称号和表彰奖励。学校秉承“公诚勇毅”校训，弘扬“三实一新”（基础' +
+            '扎实、工作踏实、作风朴实、开拓创新）校风，扎根西部、献身国防，历史上书写了新中国多个“第一”，今天在' +
+            '创建一流大学和一流学科上续写新的辉煌。';
+        viewer.zoomTo(NPU);
+    </script>
+</body>
+</html>
