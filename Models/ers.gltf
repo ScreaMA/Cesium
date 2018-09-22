@@ -1,0 +1,2017 @@
+{
+    "accessors": {
+        "accessor_100": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 16472,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 192,
+            "max": [
+                74,
+                127
+            ],
+            "min": [
+                -74,
+                -127
+            ],
+            "type": "VEC2"
+        },
+        "accessor_16": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 684,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 2544,
+            "type": "SCALAR"
+        },
+        "accessor_18": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 168,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 768,
+            "max": [
+                0.29838401079177856,
+                3.962399959564209,
+                1.806809902191162
+            ],
+            "min": [
+                -6.133509635925293,
+                -3.962399959564209,
+                -1.3715999126434326
+            ],
+            "type": "VEC3"
+        },
+        "accessor_20": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 9384,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 768,
+            "max": [
+                127,
+                127
+            ],
+            "min": [
+                -127,
+                -127
+            ],
+            "type": "VEC2"
+        },
+        "accessor_272": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 12,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_275": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 60,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_278": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 108,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_281": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 156,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_284": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 204,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_287": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 252,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_290": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 300,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_293": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 348,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_296": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 396,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_299": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 444,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_302": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 492,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_305": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 540,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_308": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 588,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_311": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 636,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR"
+        },
+        "accessor_313": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 56,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 8,
+            "max": [
+                3.5,
+                3.799999952316284,
+                0.029999999329447746
+            ],
+            "min": [
+                0,
+                -3.799999952316284,
+                -0.029999999329447746
+            ],
+            "type": "VEC3"
+        },
+        "accessor_315": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 152,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 8,
+            "max": [
+                126,
+                127
+            ],
+            "min": [
+                0,
+                -127
+            ],
+            "type": "VEC2"
+        },
+        "accessor_331": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR"
+        },
+        "accessor_333": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 4,
+            "max": [
+                0,
+                26.80000114440918,
+                4.200000286102295
+            ],
+            "min": [
+                0,
+                -26.80000114440918,
+                -4.200000286102295
+            ],
+            "type": "VEC3"
+        },
+        "accessor_335": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 48,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 4,
+            "max": [
+                127,
+                0
+            ],
+            "min": [
+                127,
+                0
+            ],
+            "type": "VEC2"
+        },
+        "accessor_351": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 8436,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 264,
+            "type": "SCALAR"
+        },
+        "accessor_353": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 16856,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 112,
+            "max": [
+                20.80000114440918,
+                1.75,
+                0.5
+            ],
+            "min": [
+                12.800000190734863,
+                -1.75,
+                -0.5
+            ],
+            "type": "VEC3"
+        },
+        "accessor_355": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 18200,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 112,
+            "max": [
+                127,
+                127
+            ],
+            "min": [
+                -127,
+                -127
+            ],
+            "type": "VEC2"
+        },
+        "accessor_36": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 5772,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 36,
+            "type": "SCALAR"
+        },
+        "accessor_38": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 10920,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 16,
+            "max": [
+                1.1883999109268188,
+                0.9143999814987183,
+                0.7620000243186951
+            ],
+            "min": [
+                -1.25,
+                -0.9143999814987183,
+                -0.7620000243186951
+            ],
+            "type": "VEC3"
+        },
+        "accessor_40": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 11112,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 16,
+            "max": [
+                127,
+                127
+            ],
+            "min": [
+                0,
+                -127
+            ],
+            "type": "VEC2"
+        },
+        "accessor_56": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 5844,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 432,
+            "type": "SCALAR"
+        },
+        "accessor_58": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 11144,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 168,
+            "max": [
+                1.1975399255752563,
+                3.962399959564209,
+                0.7711439728736877
+            ],
+            "min": [
+                -3.3974599838256836,
+                -3.962399959564209,
+                -0.7711439728736877
+            ],
+            "type": "VEC3"
+        },
+        "accessor_60": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 13160,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 168,
+            "max": [
+                127,
+                127
+            ],
+            "min": [
+                -127,
+                -127
+            ],
+            "type": "VEC2"
+        },
+        "accessor_76": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 6708,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 288,
+            "type": "SCALAR"
+        },
+        "accessor_78": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 13496,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 48,
+            "max": [
+                1.1883999109268188,
+                -0.90830397605896,
+                0.7620000243186951
+            ],
+            "min": [
+                -1.25,
+                -0.9204959869384766,
+                -0.7620000243186951
+            ],
+            "type": "VEC3"
+        },
+        "accessor_80": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 14072,
+            "byteStride": 2,
+            "componentType": 5120,
+            "count": 48,
+            "max": [
+                8,
+                127
+            ],
+            "min": [
+                0,
+                -127
+            ],
+            "type": "VEC2"
+        },
+        "accessor_96": {
+            "bufferView": "bufferView_361",
+            "byteOffset": 7284,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 576,
+            "type": "SCALAR"
+        },
+        "accessor_98": {
+            "bufferView": "bufferView_362",
+            "byteOffset": 14168,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 192,
+            "max": [
+                4.035860061645508,
+                0.16764000058174133,
+                0.5904849767684937
+            ],
+            "min": [
+                -1.2624099254608154,
+                -0.16764000058174133,
+                -0.2544020116329193
+            ],
+            "type": "VEC3"
+        },
+        "animAccessor_0": {
+            "bufferView": "bufferView_360",
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9,
+            "type": "SCALAR"
+        },
+        "animAccessor_1": {
+            "bufferView": "bufferView_360",
+            "byteOffset": 36,
+            "componentType": 5126,
+            "count": 9,
+            "type": "VEC4"
+        }
+    },
+    "animations": {
+        "animation_0": {
+            "channels": [
+                {
+                    "sampler": "animation_0_rotation_sampler",
+                    "target": {
+                        "id": "Body-Refer-2",
+                        "path": "rotation"
+                    }
+                }
+            ],
+            "parameters": {
+                "TIME": "animAccessor_0",
+                "rotation": "animAccessor_1"
+            },
+            "samplers": {
+                "animation_0_rotation_sampler": {
+                    "input": "TIME",
+                    "interpolation": "LINEAR",
+                    "output": "rotation"
+                }
+            }
+        }
+    },
+    "asset": {
+        "generator": "collada2gltf@",
+        "premultipliedAlpha": true,
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.2"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferView_360": {
+            "buffer": "ers",
+            "byteLength": 180,
+            "byteOffset": 0
+        },
+        "bufferView_361": {
+            "buffer": "ers",
+            "byteLength": 8964,
+            "byteOffset": 180,
+            "target": 34963
+        },
+        "bufferView_362": {
+            "buffer": "ers",
+            "byteLength": 18424,
+            "byteOffset": 9144,
+            "target": 34962
+        }
+    },
+    "buffers": {
+        "ers": {
+            "byteLength": 27568,
+            "type": "arraybuffer",
+            "uri": "data:application/octet-stream;base64,AAAAAAAAAD4AAIA+AQDAPgAAAD8AACA/AABAPwEAYD8AAIA/AAAAAKaoBT4AAAAAVc99P/dBwj4g+PY9lZhMvWF9aj9/eDM/pgW9PaYFvb1/eDM/YX1qP5WYTD0g+Pa990HCPlXPfT/QL84spqgFvp3EQy5hfWo/lZhMvSD49r33QcK+f3gzP6YFvb2mBb29f3gzv/dBwj4g+Pa9lZhMvWF9ar+dxMMupqgFvtAvTq1Vz32/AAABAAIAAQAAAAMAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEAAAABAAIAAQADAAIAAQAEAAMABAAFAAMABAAGAAUABgAHAAUABgAIAAcACAAJAAcACgALAAwACwANAAwACwAOAA0ADgAPAA0ADgAQAA8AEAARAA8AEAASABEAEgATABEAFAAVABYAFQAXABYAFQAYABcAGAAZABcAGAAaABkAGgAbABkAGgAcABsAHAAdABsAHgAfACAAHwAhACAAHwAiACEAIgAjACEAIgAkACMAJAAlACMAJAAmACUAJgAnACUAKAApACoAKQArACoAKQAsACsALAAtACsALAAuAC0ALgAvAC0ALgAwAC8AMAAxAC8AMgAzADQAMwA1ADQAMwA2ADUANgA3ADUANgA4ADcAOAA5ADcAOAA6ADkAOgA7ADkAPAA9AD4APQA/AD4APQBAAD8AQABBAD8AQABCAEEAQgBDAEEAQgBEAEMARABFAEMARgBHAEgARwBJAEgARwBKAEkASgBLAEkASgBMAEsATABNAEsATABOAE0ATgBPAE0AUABRAFIAUQBTAFIAUQBUAFMAVABVAFMAVABWAFUAVgBXAFUAVgBYAFcAWABZAFcAWgBbAFwAWwBdAFwAWwBeAF0AXgBfAF0AXgBgAF8AYABhAF8AYABiAGEAYgBjAGEAZABlAGYAZQBnAGYAZQBoAGcAaABpAGcAaABqAGkAagBrAGkAagBsAGsAbABtAGsAbgBvAHAAbwBxAHAAbwByAHEAcgBzAHEAcgB0AHMAdAB1AHMAdAB2AHUAdgB3AHUAeAB5AHoAeQB7AHoAeQB8AHsAfAB9AHsAfAB+AH0AfgB/AH0AfgCAAH8AgACBAH8AggCDAIQAgwCFAIQAgwCGAIUAhgCHAIUAhgCIAIcAiACJAIcAiACKAIkAigCLAIkAjACNAI4AjgCNAI8AjgCPAJAAkACPAJEAkACRAJIAkgCRAJMAkgCTAIwAjACTAI0AlACVAJYAlgCVAJcAlgCXAJgAmACXAJkAmACZAJoAmgCZAJsAmgCbAJQAlACbAJUAnACdAJ4AngCdAJ8AngCfAKAAoACfAKEAoAChAKIAogChAKMAogCjAJwAnACjAJ0ApAClAKYApgClAKcApgCnAKgAqACnAKkAqACpAKoAqgCpAKsAqgCrAKQApACrAKUArACtAK4ArgCtAK8ArgCvALAAsACvALEAsACxALIAsgCxALMAsgCzAKwArACzAK0AtAC1ALYAtgC1ALcAtgC3ALgAuAC3ALkAuAC5ALoAugC5ALsAugC7ALQAtAC7ALUAvAC9AL4AvgC9AL8AvgC/AMAAwAC/AMEAwADBAMIAwgDBAMMAwgDDALwAvADDAL0AxADFAMYAxgDFAMcAxgDHAMgAyADHAMkAyADJAMoAygDJAMsAygDLAMwAzADLAM0AzADNAM4AzgDNAM8AzgDPANAA0ADPANEA0ADRANIA0gDRANMA0gDTANQA1ADTANUA1ADVANYA1gDVANcA1gDXANgA2ADXANkA2ADZANoA2gDZANsA2gDbANwA3ADbAN0A3ADdAN4A3gDdAN8A3gDfAOAA4ADfAOEA4ADhAOIA4gDhAOMA4gDjAOQA5ADjAOUA5ADlAOYA5gDlAOcA5gDnAOgA6ADnAOkA6ADpAOoA6gDpAOsA6gDrAOwA7ADrAO0A7ADtAO4A7gDtAO8A7gDvAPAA8ADvAPEA8ADxAPIA8gDxAPMA8gDzAPQA9ADzAPUA9AD1APYA9gD1APcA9gD3APgA+AD3APkA+AD5APoA+gD5APsA+gD7AMQAxAD7AMUA/AD9AP4A/QD/AP4A/QAAAf8AAAEBAf8AAAECAQEBAgEDAQEBAgEEAQMBBAEFAQMBBgEHAQgBBwEJAQgBBwEKAQkBCgELAQkBCgEMAQsBDAENAQsBDAEOAQ0BDgEPAQ0BEAERARIBEQETARIBEQEUARMBFAEVARMBFAEWARUBFgEXARUBFgEYARcBGAEZARcBGgEbARwBGwEdARwBGwEeAR0BHgEfAR0BHgEgAR8BIAEhAR8BIAEiASEBIgEjASEBJAElASYBJQEnASYBJQEoAScBKAEpAScBKAEqASkBKgErASkBKgEsASsBLAEtASsBLgEvATABLwExATABLwEyATEBMgEzATEBMgE0ATMBNAE1ATMBNAE2ATUBNgE3ATUBOAE5AToBOQE7AToBOQE8ATsBPAE9ATsBPAE+AT0BPgE/AT0BPgFAAT8BQAFBAT8BQAFCAUEBQgFDAUEBQgFEAUMBRAFFAUMBRAFGAUUBRgFHAUUBRgFIAUcBSAFJAUcBSAFKAUkBSgFLAUkBSgFMAUsBTAFNAUsBTAFOAU0BTgFPAU0BTgFQAU8BUAFRAU8BUAFSAVEBUgFTAVEBUgFUAVMBVAFVAVMBVAFWAVUBVgFXAVUBVgFYAVcBWAFZAVcBOgE7AVoBOwFbAVoBOwE9AVsBPQFcAVsBPQE/AVwBPwFdAVwBPwFBAV0BQQFeAV0BQQFDAV4BQwFfAV4BQwFFAV8BRQFgAV8BRQFHAWABRwFhAWABRwFJAWEBSQFiAWEBSQFLAWIBSwFjAWIBSwFNAWMBTQFkAWMBTQFPAWQBTwFlAWQBTwFRAWUBUQFmAWUBUQFTAWYBUwFnAWYBUwFVAWcBVQFoAWcBVQFXAWgBVwFpAWgBVwFZAWkBWQFqAWkBWgFbAWsBWwFsAWsBWwFcAWwBXAFtAWwBXAFdAW0BXQFuAW0BXQFeAW4BXgFvAW4BXgFfAW8BXwFwAW8BXwFgAXABYAFxAXABYAFhAXEBYQFyAXEBYQFiAXIBYgFzAXIBYgFjAXMBYwF0AXMBYwFkAXQBZAF1AXQBZAFlAXUBZQF2AXUBZQFmAXYBZgF3AXYBZgFnAXcBZwF4AXcBZwFoAXgBaAF5AXgBaAFpAXkBaQF6AXkBaQFqAXoBagF7AXoBawFsAXwBbAF9AXwBbAFtAX0BbQF+AX0BbQFuAX4BbgF/AX4BbgFvAX8BbwGAAX8BbwFwAYABcAGBAYABcAFxAYEBcQGCAYEBcQFyAYIBcgGDAYIBcgFzAYMBcwGEAYMBcwF0AYQBdAGFAYQBdAF1AYUBdQGGAYUBdQF2AYYBdgGHAYYBdgF3AYcBdwGIAYcBdwF4AYgBeAGJAYgBeAF5AYkBeQGKAYkBeQF6AYoBegGLAYoBegF7AYsBewGMAYsBjQGOAY8BjQGQAY4BkAGRAY4BkAGSAZEBkgGTAZEBkgGUAZMBlAGVAZMBlAGWAZUBlgGXAZUBlgGYAZcBmAGZAZcBmAGaAZkBmgGbAZkBmgGcAZsBnAGdAZsBnAGeAZ0BnwGQAY0BnwGgAZABoAGSAZABoAGhAZIBoQGUAZIBoQGiAZQBogGWAZQBogGjAZYBowGYAZYBowGkAZgBpAGaAZgBpAGlAZoBpQGcAZoBpQGmAZwBpgGeAZwBpgGnAZ4BqAGpAaoBqQGrAaoBqQGsAasBrAGtAasBrAGuAa0BrgGvAa0BrgGwAa8BsAGxAa8BsgGzAbQBswG1AbQBswG2AbUBtgG3AbUBtgG4AbcBuAG5AbcBuAG6AbkBugG7AbkBvAG9Ab4BvQG/Ab4BvQHAAb8BwAHBAb8BwAHCAcEBwgHDAcEBwgHEAcMBxAHFAcMBxgHHAcgBxwHJAcgBxwHKAckBygHLAckBygHMAcsBzAHNAcsBzAHOAc0BzgHPAc0B0AHRAdIB0QHTAdIB0QHUAdMB1AHVAdMB1AHWAdUB1gHXAdUB1gHYAdcB2AHZAdcB2gHbAdwB2wHdAdwB2wHeAd0B3gHfAd0B3gHgAd8B4AHhAd8B4AHiAeEB4gHjAeEB5AHlAeYB5QHnAeYB5QHoAecB6AHpAecB6AHqAekB6gHrAekB6gHsAesB7AHtAesB7AHuAe0B7gHvAe0B7gHwAe8B8AHxAe8B8AHyAfEB8gHzAfEB8gH0AfMB9AH1AfMB9AH2AfUB9gH3AfUB9gH4AfcB+AH5AfcB+AH6AfkB+gH7AfkB+gH8AfsB/AH9AfsB/AH+Af0B/gH/Af0B/gEAAv8BAAIBAv8BAAICAgECAgIDAgECAgIEAgMCBAIFAgMC5gHnAQYC5wEHAgYC5wHpAQcC6QEIAgcC6QHrAQgC6wEJAggC6wHtAQkC7QEKAgkC7QHvAQoC7wELAgoC7wHxAQsC8QEMAgsC8QHzAQwC8wENAgwC8wH1AQ0C9QEOAg0C9QH3AQ4C9wEPAg4C9wH5AQ8C+QEQAg8C+QH7ARAC+wERAhAC+wH9AREC/QESAhEC/QH/ARIC/wETAhIC/wEBAhMCAQIUAhMCAQIDAhQCAwIVAhQCAwIFAhUCBQIWAhUCBgIHAhcCBwIYAhcCBwIIAhgCCAIZAhgCCAIJAhkCCQIaAhkCCQIKAhoCCgIbAhoCCgILAhsCCwIcAhsCCwIMAhwCDAIdAhwCDAINAh0CDQIeAh0CDQIOAh4CDgIfAh4CDgIPAh8CDwIgAh8CDwIQAiACEAIhAiACEAIRAiECEQIiAiECEQISAiICEgIjAiICEgITAiMCEwIkAiMCEwIUAiQCFAIlAiQCFAIVAiUCFQImAiUCFQIWAiYCFgInAiYCFwIYAigCGAIpAigCGAIZAikCGQIqAikCGQIaAioCGgIrAioCGgIbAisCGwIsAisCGwIcAiwCHAItAiwCHAIdAi0CHQIuAi0CHQIeAi4CHgIvAi4CHgIfAi8CHwIwAi8CHwIgAjACIAIxAjACIAIhAjECIQIyAjECIQIiAjICIgIzAjICIgIjAjMCIwI0AjMCIwIkAjQCJAI1AjQCJAIlAjUCJQI2AjUCJQImAjYCJgI3AjYCJgInAjcCJwI4AjcCOQI6AjsCOQI8AjoCPAI9AjoCPAI+Aj0CPgI/Aj0CPgJAAj8CQAJBAj8CQAJCAkECQgJDAkECQgJEAkMCRAJFAkMCRAJGAkUCRgJHAkUCRgJIAkcCSAJJAkcCSAJKAkkCSwI8AjkCSwJMAjwCTAI+AjwCTAJNAj4CTQJAAj4CTQJOAkACTgJCAkACTgJPAkICTwJEAkICTwJQAkQCUAJGAkQCUAJRAkYCUQJIAkYCUQJSAkgCUgJKAkgCUgJTAkoCVAJVAlYCVQJXAlYCVQJYAlcCWAJZAlcCWAJaAlkCWgJbAlkCWgJcAlsCXAJdAlsCXgJfAmACXwJhAmACXwJiAmECYgJjAmECYgJkAmMCZAJlAmMCZAJmAmUCZgJnAmUCaAJpAmoCaQJrAmoCaQJsAmsCbAJtAmsCbAJuAm0CbgJvAm0CbgJwAm8CcAJxAm8CcgJzAnQCcwJ1AnQCcwJ2AnUCdgJ3AnUCdgJ4AncCeAJ5AncCeAJ6AnkCegJ7AnkCfAJ9An4CfQJ/An4CfQKAAn8CgAKBAn8CgAKCAoECggKDAoECggKEAoMChAKFAoMChgKHAogChwKJAogChwKKAokCigKLAokCigKMAosCjAKNAosCjAKOAo0CjgKPAo0CkAKRApICkQKTApICkQKUApMClAKVApMClAKWApUClgKXApUClgKYApcCmAKZApcCmAKaApkCmgKbApkCmgKcApsCnAKdApsCnAKeAp0CngKfAp0CngKgAp8CoAKhAp8CoAKiAqECogKjAqECogKkAqMCpAKlAqMCpAKmAqUCpgKnAqUCpgKoAqcCqAKpAqcCqAKqAqkCqgKrAqkCqgKsAqsCrAKtAqsCrAKuAq0CrgKvAq0CrgKwAq8CsAKxAq8CkgKTArICkwKzArICkwKVArMClQK0ArMClQKXArQClwK1ArQClwKZArUCmQK2ArUCmQKbArYCmwK3ArYCmwKdArcCnQK4ArcCnQKfArgCnwK5ArgCnwKhArkCoQK6ArkCoQKjAroCowK7AroCowKlArsCpQK8ArsCpQKnArwCpwK9ArwCpwKpAr0CqQK+Ar0CqQKrAr4CqwK/Ar4CqwKtAr8CrQLAAr8CrQKvAsACrwLBAsACrwKxAsECsQLCAsECsgKzAsMCswLEAsMCswK0AsQCtALFAsQCtAK1AsUCtQLGAsUCtQK2AsYCtgLHAsYCtgK3AscCtwLIAscCtwK4AsgCuALJAsgCuAK5AskCuQLKAskCuQK6AsoCugLLAsoCugK7AssCuwLMAssCuwK8AswCvALNAswCvAK9As0CvQLOAs0CvQK+As4CvgLPAs4CvgK/As8CvwLQAs8CvwLAAtACwALRAtACwALBAtECwQLSAtECwQLCAtICwgLTAtICwwLEAtQCxALVAtQCxALFAtUCxQLWAtUCxQLGAtYCxgLXAtYCxgLHAtcCxwLYAtcCxwLIAtgCyALZAtgCyALJAtkCyQLaAtkCyQLKAtoCygLbAtoCygLLAtsCywLcAtsCywLMAtwCzALdAtwCzALNAt0CzQLeAt0CzQLOAt4CzgLfAt4CzgLPAt8CzwLgAt8CzwLQAuAC0ALhAuAC0ALRAuEC0QLiAuEC0QLSAuIC0gLjAuIC0gLTAuMC0wLkAuMC5QLmAucC5QLoAuYC6ALpAuYC6ALqAukC6gLrAukC6gLsAusC7ALtAusC7ALuAu0C7gLvAu0C7gLwAu8C8ALxAu8C8ALyAvEC8gLzAvEC8gL0AvMC9AL1AvMC9AL2AvUC9wLoAuUC9wL4AugC+ALqAugC+AL5AuoC+QLsAuoC+QL6AuwC+gLuAuwC+gL7Au4C+wLwAu4C+wL8AvAC/ALyAvAC/AL9AvIC/QL0AvIC/QL+AvQC/gL2AvQC/gL/AvYCAAABAAIAAQAAAAMABAAFAAYABQAEAAcACAAJAAoACgAJAAsACgALAAwADAALAA0ADAANAA4ADgANAA8ADgAPAAgACAAPAAkAAAABAAIAAQADAAIAAQAEAAMABAAFAAMABAAGAAUABgAHAAUABgAIAAcACAAJAAcACgALAAwACwANAAwACwAOAA0ADgAPAA0ADgAQAA8AEAARAA8AEAASABEAEgATABEAFAAVABYAFQAXABYAFQAYABcAGAAZABcAGAAaABkAGgAbABkAGgAcABsAHAAdABsAHgAfACAAHwAhACAAHwAiACEAIgAjACEAIgAkACMAJAAlACMAJAAmACUAJgAnACUAKAApACoAKQArACoAKQAsACsALAAtACsALAAuAC0ALgAvAC0ALgAwAC8AMAAxAC8AMgAzADQAMwA1ADQAMwA2ADUANgA3ADUANgA4ADcAOAA5ADcAOAA6ADkAOgA7ADkACgA8AD0APAA+AD0APAA/AD4APwBAAD4APwBBAEAAQQBCAEAAQQBDAEIAQwBEAEIAFABFAEYARQBHAEYARQBIAEcASABJAEcASABKAEkASgBLAEkASgBMAEsATABNAEsATgBPAFAATwBRAFAATwBSAFEAUgBTAFEAUgBUAFMAVABVAFMAVABWAFUAVgBXAFUAWABZAFoAWQBbAFoAWQBcAFsAXABdAFsAXABeAF0AXgBfAF0AXgBgAF8AYABhAF8ADABiAGMAYgBkAGMAYgBlAGQAZQBmAGQAZQBnAGYAZwBoAGYAZwBpAGgAaQBqAGgAFgBrAGwAawBtAGwAawBuAG0AbgBvAG0AbgBwAG8AcABxAG8AcAByAHEAcgBzAHEAdAB1AHYAdQB3AHYAdQB4AHcAeAB5AHcAeAB6AHkAegB7AHkAegB8AHsAfAB9AHsAfgB/AIAAfwCBAIAAfwCCAIEAggCDAIEAggCEAIMAhACFAIMAhACGAIUAhgCHAIUAiACJAIoAigCJAIsAigCLAIwAjACLAI0AjACNAI4AjgCNAI8AjgCPAIgAiACPAIkAkACRAJIAkgCRAJMAkgCTAJQAlACTAJUAlACVAJYAlgCVAJcAlgCXAJAAkACXAJEAmACZAJoAmgCZAJsAmgCbAJwAnACbAJ0AnACdAJ4AngCdAJ8AngCfAJgAmACfAJkAoAChAKIAogChAKMAogCjAKQApACjAKUApAClAKYApgClAKcApgCnAKAAoACnAKEAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEACAAJAAoACgAJAAsACgALAAwADAALAA0ADAANAA4ADgANAA8ADgAPAAgACAAPAAkAEAARABIAEgARABMAEgATABQAFAATABUAFAAVABYAFgAVABcAFgAXABAAEAAXABEAGAAZABoAGgAZABsAGgAbABwAHAAbAB0AHAAdAB4AHgAdAB8AHgAfABgAGAAfABkAIAAhACIAIgAhACMAIgAjACQAJAAjACUAJAAlACYAJgAlACcAJgAnACAAIAAnACEAKAApACoAKgApACsAKgArACwALAArAC0ALAAtAC4ALgAtAC8ALgAvACgAKAAvACkAAAABAAIAAgABAAMAAgADAAQABAADAAUABAAFAAYABgAFAAcABgAHAAAAAAAHAAEACAAJAAoACgAJAAsACgALAAwADAALAA0ADAANAA4ADgANAA8ADgAPAAgACAAPAAkAEAARABIAEgARABMAEgATABQAFAATABUAFAAVABYAFgAVABcAFgAXABAAEAAXABEAGAAZABoAGgAZABsAGgAbABwAHAAbAB0AHAAdAB4AHgAdAB8AHgAfABgAGAAfABkAIAAhACIAIgAhACMAIgAjACQAJAAjACUAJAAlACYAJgAlACcAJgAnACAAIAAnACEAKAApACoAKgApACsAKgArACwALAArAC0ALAAtAC4ALgAtAC8ALgAvACgAKAAvACkAAAABAAIAAAACAAMAAwACAAQAAwAEAAUABQAEAAYABQAGAAcABwAGAAEABwABAAAACAAJAAoACAAKAAsACwAKAAwACwAMAA0ADQAMAA4ADQAOAA8ADwAOAAkADwAJAAgAEAARABIAEAASABMAEwASABQAEwAUABUAFQAUABYAFQAWABcAFwAWABEAFwARABAAGAAZABoAGAAaABsAGwAaABwAGwAcAB0AHQAcAB4AHQAeAB8AHwAeABkAHwAZABgAIAAhACIAIAAiACMAIwAiACQAIwAkACUAJQAkACYAJQAmACcAJwAmACEAJwAhACAAKAApACoAKAAqACsAKwAqACwAKwAsAC0ALQAsAC4ALQAuAC8ALwAuACkALwApACgAMAAxADIAMAAyADMAMwAyADQAMwA0ADUANQA0ADYANQA2ADcANwA2ADEANwAxADAAOAA5ADoAOAA6ADsAOwA6ADwAOwA8AD0APQA8AD4APQA+AD8APwA+ADkAPwA5ADgAQABBAEIAQABCAEMAQwBCAEQAQwBEAEUARQBEAEYARQBGAEcARwBGAEEARwBBAEAASABJAEoASABKAEsASwBKAEwASwBMAE0ATQBMAE4ATQBOAE8ATwBOAEkATwBJAEgAUABRAFIAUABSAFMAUwBSAFQAUwBUAFUAVQBUAFYAVQBWAFcAVwBWAFEAVwBRAFAAWABZAFoAWABaAFsAWwBaAFwAWwBcAF0AXQBcAF4AXQBeAF8AXwBeAFkAXwBZAFgAYABhAGIAYABiAGMAYwBiAGQAYwBkAGUAZQBkAGYAZQBmAGcAZwBmAGEAZwBhAGAAaABpAGoAaABqAGsAawBqAGwAawBsAG0AbQBsAG4AbQBuAG8AbwBuAGkAbwBpAGgAcABxAHIAcAByAHMAcwByAHQAcwB0AHUAdQB0AHYAdQB2AHcAdwB2AHEAdwBxAHAAeAB5AHoAeAB6AHsAewB6AHwAewB8AH0AfQB8AH4AfQB+AH8AfwB+AHkAfwB5AHgAgACBAIIAgACCAIMAgwCCAIQAgwCEAIUAhQCEAIYAhQCGAIcAhwCGAIEAhwCBAIAAiACJAIoAiACKAIsAiwCKAIwAiwCMAI0AjQCMAI4AjQCOAI8AjwCOAIkAjwCJAIgAkACRAJIAkACSAJMAkwCSAJQAkwCUAJUAlQCUAJYAlQCWAJcAlwCWAJEAlwCRAJAAmACZAJoAmACaAJsAmwCaAJwAmwCcAJ0AnQCcAJ4AnQCeAJ8AnwCeAJkAnwCZAJgAoAChAKIAoACiAKMAowCiAKQAowCkAKUApQCkAKYApQCmAKcApwCmAKEApwChAKAAqACpAKoAqACqAKsAqwCqAKwAqwCsAK0ArQCsAK4ArQCuAK8ArwCuAKkArwCpAKgAsACxALIAsACyALMAswCyALQAswC0ALUAtQC0ALYAtQC2ALcAtwC2ALEAtwCxALAAuAC5ALoAuAC6ALsAuwC6ALwAuwC8AL0AvQC8AL4AvQC+AL8AvwC+ALkAvwC5ALgAAAABAAIAAQAAAAMABAAFAAYABQAEAAcABwAEAAgACAAEAAkACgALAAwACgAMAA0ABQAOAA8ADgAFAAcAEAARABIAEgARABMAEgATABQAFAATABUAFAAVABYAFgAVABcAFgAXABgAGAAXABkAGAAZABoAGgAZABsAGgAbABwAHAAbAB0AHAAdAB4AHgAdAB8AHgAfACAAIAAfACEAIAAhACIAIgAhACMAIgAjACQAJAAjACUAJAAlACYAJgAlACcAJgAnABAAEAAnABEAKAApACoAKQAoACsALAAtAC4ALQAsAC8ALwAsADAAMAAsADEAMgAzADQAMgA0ADUALQA2ADcANgAtAC8AOAA5ADoAOQA4ADsAPAA9AD4APQA8AD8APwA8AEAAQAA8AEEAQgBDAEQAQgBEAEUAPQBGAEcARgA9AD8ASABJAEoASgBJAEsASgBLAEwATABLAE0ATABNAE4ATgBNAE8ATgBPAFAAUABPAFEAUABRAFIAUgBRAFMA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AAAAPwAAAL9nZqZBAADAPwAAAL9nZqZBAADAPwAAAL9nZqZBAADAPwAAAD9nZqZBAADAPwAAgD5nZqZBAADAPwAAgL5nZqZBAACAPgAAgL5nZqZBAACAPgAAgD5nZqZBAADAPwAAAD/NzExBAADAPwAAAD9nZqZBAADAPwAAgD7NzExBAADAPwAAgD5nZqZBAADgPwAAgD7NzExBAADgPwAAgD5nZqZBAADgPwAAgL7NzExBAADgPwAAgL5nZqZBAADAPwAAgL7NzExBAADAPwAAgL5nZqZBAADAPwAAAL/NzExBAADAPwAAAL9nZqZBAAAAPwAAAL/NzExBAAAAPwAAAL9nZqZBAAAAPwAAgL7NzExBAAAAPwAAgL5nZqZBAACAPgAAgL7NzExBAACAPgAAgL5nZqZBAACAPgAAgD7NzExBAACAPgAAgD5nZqZBAAAAPwAAgD7NzExBAAAAPwAAgD5nZqZBAAAAPwAAAD/NzExBAAAAPwAAAD/NzExBAADgPwAAgD7NzExBAADAPwAAgL7NzExBAADAPwAAgD7NzExBAADgPwAAgL7NzExBAADAPwAAAD/NzExBAAAAPwAAgD7NzExBAAAAPwAAAD/NzExBAAAAPwAAgL7NzExBAAAAPwAAAL/NzExBAADAPwAAAL/NzExBAADAPwAAAL/NzExBAADAPwAAAD/NzExBAADAPwAAgD7NzExBAADAPwAAgL7NzExBAACAPgAAgL7NzExBAACAPgAAgD5nZqZBAACAvgAAgD5nZqZBAAAAvwAAgL5nZqZBAAAAvwAAgD5nZqZBAACAvgAAgL5nZqZBAAAAvwAAAD9nZqZBAADAvwAAgD5nZqZBAADAvwAAAD9nZqZBAADAvwAAgL5nZqZBAADAvwAAAL9nZqZBAAAAvwAAAL9nZqZBAAAAvwAAAL9nZqZBAAAAvwAAAD9nZqZBAAAAvwAAgD5nZqZBAAAAvwAAgL5nZqZBAADgvwAAgL5nZqZBAADgvwAAgD5nZqZBAAAAvwAAAD/NzExBAAAAvwAAAD9nZqZBAAAAvwAAgD7NzExBAAAAvwAAgD5nZqZBAACAvgAAgD7NzExBAACAvgAAgD5nZqZBAACAvgAAgL7NzExBAACAvgAAgL5nZqZBAAAAvwAAgL7NzExBAAAAvwAAgL5nZqZBAAAAvwAAAL/NzExBAAAAvwAAAL9nZqZBAADAvwAAAL/NzExBAADAvwAAAL9nZqZBAADAvwAAgL7NzExBAADAvwAAgL5nZqZBAADgvwAAgL7NzExBAADgvwAAgL5nZqZBAADgvwAAgD7NzExBAADgvwAAgD5nZqZBAADAvwAAgD7NzExBAADAvwAAgD5nZqZBAADAvwAAAD/NzExBAADAvwAAAD/NzExBAACAvgAAgD7NzExBAAAAvwAAgL7NzExBAAAAvwAAgD7NzExBAACAvgAAgL7NzExBAAAAvwAAAD/NzExBAADAvwAAgD7NzExBAADAvwAAAD/NzExBAADAvwAAgL7NzExBAADAvwAAAL/NzExBAAAAvwAAAL/NzExBAAAAvwAAAL/NzExBAAAAvwAAAD/NzExBAAAAvwAAgD7NzExBAAAAvwAAgL7NzExBAADgvwAAgL7NzExBAADgvwAAgD6BAIEAgQCBAIEAgQCBAIEAgQCBAH8AfwB/AH8AgQCBAGaBZoFAgUCBKoEqgQCrAKsAwQDBAOcA5wAZABkAPwA/AFUAVSp/Kn9Af0B/Zn9mf4EAgQCBAIEAgQCBAIEAgQCBAIEAfwB/AH8AfwCBAIEAgQCBAIEAgQCBAIEAgQCBAIEAgQB/AH8AfwB/AIEAgQBmgWaBQIFAgSqBKoEAqwCrAMEAwQDnAOcAGQAZAD8APwBVAFUqfyp/QH9Af2Z/Zn+BAIEAgQCBAIEAgQCBAIEAgQCBAH8AfwB/AH8AgQCBAA=="
+        }
+    },
+    "materials": {
+        "GraySubPanel-PolygonMesh-effect": {
+            "name": "GraySubPanel-PolygonMesh-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    0.2509799897670746,
+                    0.2509799897670746,
+                    0.2509799897670746,
+                    1
+                ],
+                "diffuse": [
+                    0.2509799897670746,
+                    0.2509799897670746,
+                    0.2509799897670746,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 0,
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        },
+        "LongSprtTube-Revolve-effect": {
+            "name": "LongSprtTube-Revolve-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    0.7450979948043823,
+                    0.7450979948043823,
+                    0.7450979948043823,
+                    1
+                ],
+                "diffuse": [
+                    0.7450979948043823,
+                    0.7450979948043823,
+                    0.7450979948043823,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 0,
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        },
+        "Platform-Extrusion-effect": {
+            "name": "Platform-Extrusion-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    0.5450980067253113,
+                    0.4588240087032318,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    0.5450980067253113,
+                    0.4588240087032318,
+                    0,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 0,
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        },
+        "PlatformEdge-Revolve-effect": {
+            "name": "PlatformEdge-Revolve-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    0.09019610285758972,
+                    0.09019610285758972,
+                    0.09019610285758972,
+                    1
+                ],
+                "diffuse": [
+                    0.09019610285758972,
+                    0.09019610285758972,
+                    0.09019610285758972,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 0,
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        },
+        "PlatformSide1-Extrusion-effect": {
+            "name": "PlatformSide1-Extrusion-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    0.3019610047340393,
+                    0.3019610047340393,
+                    0.3019610047340393,
+                    1
+                ],
+                "diffuse": [
+                    0.3019610047340393,
+                    0.3019610047340393,
+                    0.3019610047340393,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 0,
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        },
+        "SolPanseg-Extrusion-effect": {
+            "name": "SolPanseg-Extrusion-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    0.007843139581382275,
+                    0.01568629965186119,
+                    0.23529399931430817,
+                    1
+                ],
+                "diffuse": [
+                    0.007843139581382275,
+                    0.01568629965186119,
+                    0.23529399931430817,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 128,
+                "specular": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ]
+            }
+        },
+        "SolStoBox1-Extrusion-effect": {
+            "name": "SolStoBox1-Extrusion-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "diffuse": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 0,
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        },
+        "SprtBraceLeg-Extrusion-effect": {
+            "name": "SprtBraceLeg-Extrusion-material",
+            "technique": "technique0",
+            "values": {
+                "ambient": [
+                    1,
+                    0.8431370258331299,
+                    0,
+                    1
+                ],
+                "diffuse": [
+                    1,
+                    0.8431370258331299,
+                    0,
+                    1
+                ],
+                "emission": [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "shininess": 0,
+                "specular": [
+                    0,
+                    0,
+                    0,
+                    1
+                ]
+            }
+        }
+    },
+    "meshes": {
+        "GraySubPanel-PolygonMesh-geometry": {
+            "name": "GraySubPanel-PolygonMesh-geometry",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_335",
+                        "POSITION": "accessor_333"
+                    },
+                    "indices": "accessor_331",
+                    "material": "GraySubPanel-PolygonMesh-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "SolPanseg-Extrusion-geometry": {
+            "name": "SolPanseg-Extrusion-geometry",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_272",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_275",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_278",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_281",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_284",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_287",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_290",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_293",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_296",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_299",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_302",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_305",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_308",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_315",
+                        "POSITION": "accessor_313"
+                    },
+                    "indices": "accessor_311",
+                    "material": "SolPanseg-Extrusion-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "geometry-ID1": {
+            "name": "geometry-ID1",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_20",
+                        "POSITION": "accessor_18"
+                    },
+                    "indices": "accessor_16",
+                    "material": "LongSprtTube-Revolve-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "geometry-ID2": {
+            "name": "geometry-ID2",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_40",
+                        "POSITION": "accessor_38"
+                    },
+                    "indices": "accessor_36",
+                    "material": "Platform-Extrusion-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "geometry-ID3": {
+            "name": "geometry-ID3",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_60",
+                        "POSITION": "accessor_58"
+                    },
+                    "indices": "accessor_56",
+                    "material": "PlatformEdge-Revolve-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "geometry-ID4": {
+            "name": "geometry-ID4",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_80",
+                        "POSITION": "accessor_78"
+                    },
+                    "indices": "accessor_76",
+                    "material": "PlatformSide1-Extrusion-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "geometry-ID5": {
+            "name": "geometry-ID5",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_100",
+                        "POSITION": "accessor_98"
+                    },
+                    "indices": "accessor_96",
+                    "material": "SprtBraceLeg-Extrusion-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "geometry-ID6": {
+            "name": "geometry-ID6",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_355",
+                        "POSITION": "accessor_353"
+                    },
+                    "indices": "accessor_351",
+                    "material": "SolStoBox1-Extrusion-effect",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "Body-Refer-2": {
+            "children": [
+                "SolPanseg",
+                "SolPanseg-2",
+                "SolPanseg-3",
+                "SolPanseg-4",
+                "SolPanseg-5",
+                "SolPanseg-6",
+                "SolPanseg-7",
+                "SolPanseg-8",
+                "SolPanseg-9",
+                "SolPanseg-10",
+                "SolPanseg-11",
+                "SolPanseg-12",
+                "SolPanseg-13",
+                "SolPanseg-14",
+                "node_34",
+                "node_35"
+            ],
+            "name": "Body-Refer-2",
+            "rotation": [
+                0,
+                0.13052615523338318,
+                0,
+                0.9914448857307434
+            ],
+            "scale": [
+                0.3048000633716583,
+                0.30480000376701355,
+                0.3048000633716583
+            ],
+            "translation": [
+                -1.25,
+                0,
+                1.0667999982833862
+            ]
+        },
+        "SolPanseg": {
+            "children": [
+                "node_7"
+            ],
+            "matrix": [
+                -0.000000043711398944878965,
+                1,
+                0,
+                0,
+                -1,
+                -0.000000043711398944878965,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                1,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg"
+        },
+        "SolPanseg-10": {
+            "children": [
+                "node_25"
+            ],
+            "matrix": [
+                0.00000013113400143538456,
+                -1,
+                0,
+                0,
+                1,
+                0.00000013113400143538456,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                -8.199999809265137,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-10"
+        },
+        "SolPanseg-11": {
+            "children": [
+                "node_27"
+            ],
+            "matrix": [
+                0.00000013113400143538456,
+                -1,
+                0,
+                0,
+                1,
+                0.00000013113400143538456,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                -11.800000190734863,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-11"
+        },
+        "SolPanseg-12": {
+            "children": [
+                "node_29"
+            ],
+            "matrix": [
+                0.00000013113400143538456,
+                -1,
+                0,
+                0,
+                1,
+                0.00000013113400143538456,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                -15.40000057220459,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-12"
+        },
+        "SolPanseg-13": {
+            "children": [
+                "node_31"
+            ],
+            "matrix": [
+                0.00000013113400143538456,
+                -1,
+                0,
+                0,
+                1,
+                0.00000013113400143538456,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                -19,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-13"
+        },
+        "SolPanseg-14": {
+            "children": [
+                "node_33"
+            ],
+            "matrix": [
+                0.00000013113400143538456,
+                -1,
+                0,
+                0,
+                1,
+                0.00000013113400143538456,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                -22.600000381469727,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-14"
+        },
+        "SolPanseg-2": {
+            "children": [
+                "node_9"
+            ],
+            "matrix": [
+                -0.000000043711398944878965,
+                1,
+                0,
+                0,
+                -1,
+                -0.000000043711398944878965,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                4.599999904632568,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-2"
+        },
+        "SolPanseg-3": {
+            "children": [
+                "node_11"
+            ],
+            "matrix": [
+                -0.000000043711398944878965,
+                1,
+                0,
+                0,
+                -1,
+                -0.000000043711398944878965,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                8.199999809265137,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-3"
+        },
+        "SolPanseg-4": {
+            "children": [
+                "node_13"
+            ],
+            "matrix": [
+                -0.000000043711398944878965,
+                1,
+                0,
+                0,
+                -1,
+                -0.000000043711398944878965,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                11.800000190734863,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-4"
+        },
+        "SolPanseg-5": {
+            "children": [
+                "node_15"
+            ],
+            "matrix": [
+                -0.000000043711398944878965,
+                1,
+                0,
+                0,
+                -1,
+                -0.000000043711398944878965,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                15.40000057220459,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-5"
+        },
+        "SolPanseg-6": {
+            "children": [
+                "node_17"
+            ],
+            "matrix": [
+                -0.000000043711398944878965,
+                1,
+                0,
+                0,
+                -1,
+                -0.000000043711398944878965,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                19,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-6"
+        },
+        "SolPanseg-7": {
+            "children": [
+                "node_19"
+            ],
+            "matrix": [
+                -0.000000043711398944878965,
+                1,
+                0,
+                0,
+                -1,
+                -0.000000043711398944878965,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                22.600000381469727,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-7"
+        },
+        "SolPanseg-8": {
+            "children": [
+                "node_21"
+            ],
+            "matrix": [
+                0.00000013113400143538456,
+                -1,
+                0,
+                0,
+                1,
+                0.00000013113400143538456,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                -1,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-8"
+        },
+        "SolPanseg-9": {
+            "children": [
+                "node_23"
+            ],
+            "matrix": [
+                0.00000013113400143538456,
+                -1,
+                0,
+                0,
+                1,
+                0.00000013113400143538456,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                16.80000114440918,
+                -4.599999904632568,
+                -0.03999999910593033,
+                1
+            ],
+            "name": "SolPanseg-9"
+        },
+        "node_0": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "geometry-ID1"
+            ],
+            "name": ""
+        },
+        "node_1": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "geometry-ID2"
+            ],
+            "name": ""
+        },
+        "node_11": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_13": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_15": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_17": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_19": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_2": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "geometry-ID3"
+            ],
+            "name": ""
+        },
+        "node_21": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_23": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_25": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_27": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_29": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_3": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "geometry-ID4"
+            ],
+            "name": ""
+        },
+        "node_31": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_33": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_34": {
+            "children": [],
+            "matrix": [
+                0.000000043711398944878965,
+                0.000000000000003821370083296463,
+                1,
+                0,
+                0.00000008742279788975793,
+                -1,
+                0,
+                0,
+                1,
+                0.00000008742279788975793,
+                -0.000000043711398944878965,
+                0,
+                16.80000114440918,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "GraySubPanel-PolygonMesh-geometry"
+            ],
+            "name": ""
+        },
+        "node_35": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "geometry-ID6"
+            ],
+            "name": ""
+        },
+        "node_36": {
+            "children": [
+                "node_0",
+                "node_1",
+                "node_2",
+                "node_3",
+                "node_4",
+                "Body-Refer-2"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        },
+        "node_4": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "geometry-ID5"
+            ],
+            "name": ""
+        },
+        "node_7": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        },
+        "node_9": {
+            "children": [],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "meshes": [
+                "SolPanseg-Extrusion-geometry"
+            ],
+            "name": ""
+        }
+    },
+    "programs": {
+        "program_0": {
+            "attributes": [
+                "a_normal",
+                "a_position"
+            ],
+            "fragmentShader": "ers0FS",
+            "vertexShader": "ers0VS"
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_36"
+            ]
+        }
+    },
+    "shaders": {
+        "ers0FS": {
+            "type": 35632,
+            "uri": "data:text/plain;base64,cHJlY2lzaW9uIGhpZ2hwIGZsb2F0Owp2YXJ5aW5nIHZlYzMgdl9ub3JtYWw7CnVuaWZvcm0gdmVjNCB1X2FtYmllbnQ7CnVuaWZvcm0gdmVjNCB1X2RpZmZ1c2U7CnVuaWZvcm0gdmVjNCB1X2VtaXNzaW9uOwp1bmlmb3JtIHZlYzQgdV9zcGVjdWxhcjsKdW5pZm9ybSBmbG9hdCB1X3NoaW5pbmVzczsKdm9pZCBtYWluKHZvaWQpIHsKdmVjMyBub3JtYWwgPSBub3JtYWxpemUodl9ub3JtYWwpOwppZiAoZ2xfRnJvbnRGYWNpbmcgPT0gZmFsc2UpIG5vcm1hbCA9IC1ub3JtYWw7CnZlYzQgY29sb3IgPSB2ZWM0KDAuLCAwLiwgMC4sIDAuKTsKdmVjNCBkaWZmdXNlID0gdmVjNCgwLiwgMC4sIDAuLCAxLik7CnZlYzQgZW1pc3Npb247CnZlYzQgYW1iaWVudDsKdmVjNCBzcGVjdWxhcjsKYW1iaWVudCA9IHVfYW1iaWVudDsKZGlmZnVzZSA9IHVfZGlmZnVzZTsKZW1pc3Npb24gPSB1X2VtaXNzaW9uOwpzcGVjdWxhciA9IHVfc3BlY3VsYXI7CmRpZmZ1c2UueHl6ICo9IG1heChkb3Qobm9ybWFsLHZlYzMoMC4sMC4sMS4pKSwgMC4pOwpjb2xvci54eXogKz0gZGlmZnVzZS54eXo7CmNvbG9yLnh5eiArPSBlbWlzc2lvbi54eXo7CmNvbG9yID0gdmVjNChjb2xvci5yZ2IgKiBkaWZmdXNlLmEsIGRpZmZ1c2UuYSk7CmdsX0ZyYWdDb2xvciA9IGNvbG9yOwp9Cg=="
+        },
+        "ers0VS": {
+            "type": 35633,
+            "uri": "data:text/plain;base64,Y29uc3QgZmxvYXQgbm9ybWFsTXVsdGlwbGllciA9IDAuMDA3ODc0MDE1NzQ4MDMxNTsKdmVjMiBzaWduTm90WmVybyh2ZWMyIHYpCnsKICByZXR1cm4gdmVjMigodi54ID49IDAuMCkgPyArMS4wIDogLTEuMCwgKHYueSA+PSAwLjApID8gKzEuMCA6IC0xLjApOwp9CnZlYzMgb2N0X3RvX2Zsb2F0MzJ4Myh2ZWMyIGUpCnsKICB2ZWMzIHYgPSB2ZWMzKGUueHksIDEuMCAtIGFicyhlLngpIC0gYWJzKGUueSkpOwogIGlmICh2LnogPCAwLjApCiAgICAgIHYueHkgPSAoMS4wIC0gYWJzKHYueXgpKSAqIHNpZ25Ob3RaZXJvKHYueHkpOwogIHJldHVybiBub3JtYWxpemUodik7Cn0KcHJlY2lzaW9uIGhpZ2hwIGZsb2F0OwphdHRyaWJ1dGUgdmVjMyBhX3Bvc2l0aW9uOwphdHRyaWJ1dGUgdmVjMiBhX25vcm1hbDsKdmFyeWluZyB2ZWMzIHZfbm9ybWFsOwp1bmlmb3JtIG1hdDMgdV9ub3JtYWxNYXRyaXg7CnVuaWZvcm0gbWF0NCB1X21vZGVsVmlld01hdHJpeDsKdW5pZm9ybSBtYXQ0IHVfcHJvamVjdGlvbk1hdHJpeDsKdm9pZCBtYWluKHZvaWQpIHsKdmVjNCBwb3MgPSB1X21vZGVsVmlld01hdHJpeCAqIHZlYzQoYV9wb3NpdGlvbiwxLjApOwp2X25vcm1hbCA9IG5vcm1hbGl6ZSh1X25vcm1hbE1hdHJpeCAqIG9jdF90b19mbG9hdDMyeDMoYV9ub3JtYWwqbm9ybWFsTXVsdGlwbGllcikpOwpnbF9Qb3NpdGlvbiA9IHVfcHJvamVjdGlvbk1hdHJpeCAqIHBvczsKfQoK"
+        }
+    },
+    "skins": {},
+    "techniques": {
+        "technique0": {
+            "attributes": {
+                "a_normal": "normal",
+                "a_position": "position"
+            },
+            "parameters": {
+                "ambient": {
+                    "type": 35666
+                },
+                "diffuse": {
+                    "type": 35666
+                },
+                "emission": {
+                    "type": 35666
+                },
+                "modelViewMatrix": {
+                    "semantic": "MODELVIEW",
+                    "type": 35676
+                },
+                "normal": {
+                    "semantic": "NORMAL",
+                    "type": 35665
+                },
+                "normalMatrix": {
+                    "semantic": "MODELVIEWINVERSETRANSPOSE",
+                    "type": 35675
+                },
+                "position": {
+                    "semantic": "POSITION",
+                    "type": 35665
+                },
+                "projectionMatrix": {
+                    "semantic": "PROJECTION",
+                    "type": 35676
+                },
+                "shininess": {
+                    "type": 5126
+                },
+                "specular": {
+                    "type": 35666
+                }
+            },
+            "program": "program_0",
+            "states": {
+                "enable": [
+                    2929
+                ]
+            },
+            "uniforms": {
+                "u_ambient": "ambient",
+                "u_diffuse": "diffuse",
+                "u_emission": "emission",
+                "u_modelViewMatrix": "modelViewMatrix",
+                "u_normalMatrix": "normalMatrix",
+                "u_projectionMatrix": "projectionMatrix",
+                "u_shininess": "shininess",
+                "u_specular": "specular"
+            }
+        }
+    }
+}

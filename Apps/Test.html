@@ -46,6 +46,119 @@
             '扎实、工作踏实、作风朴实、开拓创新）校风，扎根西部、献身国防，历史上书写了新中国多个“第一”，今天在' +
             '创建一流大学和一流学科上续写新的辉煌。';
         viewer.zoomTo(NPU);
+        /*var scene = viewer.scene;
+        var modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
+            Cesium.Cartesian3.fromDegrees(108.7606140269, 34.0321282057, 0.0));
+        var model = scene.primitives.add(Cesium.Model.fromGltf({
+            url : '../Models/aces.gltf',
+            modelMatrix : modelMatrix,
+            scale : 40.0,
+
+        }));
+        Cesium.when(model.readyPromise).then(function(model) {
+            model.activeAnimations.addAll({
+                loop : Cesium.ModelAnimationLoop.REPEAT
+            });
+        });*/
+
+        // 小车旋转角度
+        let radian = Cesium.Math.toRadians(3.0);
+        // 小车的速度
+        let speed = 60;
+        // 速度矢量
+        let speedVector = new Cesium.Cartesian3();
+        let scene = viewer.scene;
+        // 起始位置
+        let position = Cesium.Cartesian3.fromDegrees(108.7606140269,34.0321282057,2000);
+
+        // 用于设置小车方向
+        let hpRoll = new Cesium.HeadingPitchRoll();
+        let fixedFrameTransforms =  Cesium.Transforms.localFrameToFixedFrameGenerator('north', 'west');
+        // 添加小车模型
+        let carPrimitive = scene.primitives.add(Cesium.Model.fromGltf({
+            url: '../Models/f-35_jsf_stovl.gltf',
+            modelMatrix: Cesium.Transforms.headingPitchRollToFixedFrame(position, hpRoll, Cesium.Ellipsoid.WGS84, fixedFrameTransforms),
+            scale : 40
+        }));
+        // 小车状态标志
+        let flag = {
+            moveUp:false,
+            moveDown:false,
+            moveLeft:false,
+            moveRight:false
+        };
+
+        // 根据键盘按键返回标志
+        function setFlagStatus(key,value) {
+            switch (key.keyCode){
+                case 37:
+                    // 左
+                    flag.moveLeft = value;
+                    break;
+                case 38:
+                    // 上
+                    flag.moveUp = value;
+                    break;
+                case 39:
+                    // 右
+                    flag.moveRight = value;
+                    break;
+                case 40:
+                    flag.moveDown = value;
+                    // 下
+                    break;
+            }
+        }
+
+        document.addEventListener('keydown',(e)=>{
+            setFlagStatus(e, true);
+        });
+
+        document.addEventListener('keyup',(e)=>{
+            setFlagStatus(e, false);
+        });
+        // 对帧添加监听事件
+        viewer.clock.onTick.addEventListener((clock)=>{
+
+            if(flag.moveUp){
+
+                if(flag.moveLeft){
+                    hpRoll.heading -= radian;
+                }
+
+                if(flag.moveRight){
+                    hpRoll.heading += radian;
+                }
+                moveCar(true);
+            }
+
+            if(flag.moveDown){
+                if(flag.moveLeft){
+                    hpRoll.heading -= radian;
+                }
+
+                if(flag.moveRight){
+                    hpRoll.heading += radian;
+                }
+                moveCar(false);
+            }
+
+        });
+
+        // 移动小车
+        function moveCar(isUP) {
+            // 计算速度矩阵
+            if(isUP>0){
+                speedVector = Cesium.Cartesian3.multiplyByScalar(Cesium.Cartesian3.UNIT_X,speed,speedVector);
+            }else{
+                speedVector = Cesium.Cartesian3.multiplyByScalar(Cesium.Cartesian3.UNIT_X,-speed,speedVector);
+            }
+            // 根据速度计算出下一个位置的坐标
+            position = Cesium.Matrix4.multiplyByPoint(carPrimitive.modelMatrix ,speedVector, position);
+            // 小车移动
+            Cesium.Transforms.headingPitchRollToFixedFrame(position, hpRoll, Cesium.Ellipsoid.WGS84, fixedFrameTransforms, carPrimitive.modelMatrix);
+        }
+
     </script>
 </body>
 </html>
