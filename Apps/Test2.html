@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8">
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>测试型Cesium</title>
+    <script src="../Build/Cesium/Cesium.js"></script>
+    <style>
+        @import url(../Build/Cesium/Widgets/widgets.css);
+        html, body, #cesiumContainer {
+            width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script>
+    Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5MTdjOGViZS1iODBjLTQxNzgtYjIyOC0xYjRjY2M0MWJiMjMiLCJpZCI6MzQ0MSwiaWF0IjoxNTM3NTA4Nzc5fQ.7jjLy2SJkM55S9Ig-MeOo1Uo13A9ku60J9kR9Zzv88M';
+    var viewer = new Cesium.Viewer('cesiumContainer',{
+        timeline : false,
+        animation : false,
+        shouldAnimate: true
+    });
+    var czml = [{
+        "id" : "document",
+        "name" : "CZML Path",
+        "version" : "1.0",
+        "clock": {
+            "interval": "2012-08-04T10:00:00Z/2012-08-04T10:00:10Z",
+            "currentTime": "2012-08-04T10:00:00Z",
+            "multiplier": 10
+        }
+    }, {
+        "id" : "path",
+        "name" : "path with GPS flight data",
+        "availability" : "2012-08-04T10:00:00Z/2012-08-04T15:00:00Z",
+        "path" : {
+            "material" : {
+                "polylineOutline" : {
+                    "color" : {
+                        "rgba" : [255, 0, 255, 255]
+                    },
+                    "outlineColor" : {
+                        "rgba" : [0, 255, 255, 255]
+                    },
+                    "outlineWidth" : 5
+                }
+            },
+            "width" : 8,
+            "leadTime" : 10,
+            "trailTime" : 1000,
+            "resolution" : 5
+        },
+        "billboard" : {
+            "image" : "../Pics/npu.png",
+            "scale" : 0.2
+
+        },
+        "position" : {
+            "epoch" : "2012-08-04T10:00:00Z",
+            "cartographicDegrees" : [
+                0,121.5566469111,30.1594425572,80000,
+                10,122.6498717095,29.9691706437,0
+
+
+            ]
+        }
+    }];
+
+    var Screen_Center = viewer.entities.add(
+        {
+            position: Cesium.Cartesian3.fromDegrees(122.0897656852,29.3574916390),
+            point : {
+                show : true, // default
+                color : Cesium.Color.SKYBLUE, // default: WHITE
+                pixelSize : 10, // default: 1
+                outlineColor : Cesium.Color.YELLOW, // default: BLACK
+                outlineWidth : 3 // default: 0
+            }
+        }
+    );
+    var Satellite = viewer.entities.add({
+        model: {
+            uri : "../Models/a2100.gltf",
+            minimumPixelSize : 64,
+            maximumScale : 20000
+        },
+        position:  Cesium.Cartesian3.fromDegrees(121.5566469111,30.1594425572,80000)
+    });
+    var Ground = viewer.entities.add(
+        {
+            polygon:
+                {hierarchy : Cesium.Cartesian3.fromDegreesArray([
+               121.7325257411,29.4349910996,
+                121.8811048908,29.4138469861,
+                121.8975965630,29.2437408096,
+                121.6118554117,29.2437372296
+            ]),
+            material : Cesium.Color.RED.withAlpha(0.5),
+            outline : true,
+            outlineColor : Cesium.Color.BLACK}
+        }
+    );
+    var Carrier = viewer.entities.add(
+        {
+            model: {
+                uri: "../Models/aircraft-carrier.gltf",
+                minimumPixelSize: 64,
+                maximumScale :20000
+            },
+            position: Cesium.Cartesian3.fromDegrees(122.6498717095,29.9691706437,0)
+
+        }
+    );
+
+
+    viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
+    viewer.camera.setView({
+        destination : Cesium.Cartesian3.fromDegrees(122.0897656852, 29.3574916390, 450000.0)});
+    /*var scene = viewer.scene;
+    var modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
+        Cesium.Cartesian3.fromDegrees(108.7606140269, 34.0321282057, 0.0));
+    var model = scene.primitives.add(Cesium.Model.fromGltf({
+        url : '../Models/aces.gltf',
+        modelMatrix : modelMatrix,
+        scale : 40.0,
+
+    }));
+    Cesium.when(model.readyPromise).then(function(model) {
+        model.activeAnimations.addAll({
+            loop : Cesium.ModelAnimationLoop.REPEAT
+        });
+    });*/
+
+
+
+</script>
+</body>
+</html>

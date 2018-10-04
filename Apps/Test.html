@@ -72,7 +72,7 @@
         let speedVector = new Cesium.Cartesian3();
         let scene = viewer.scene;
         // 起始位置
-        let position = Cesium.Cartesian3.fromDegrees(108.7606140269,34.0321282057,2000);
+        let position = Cesium.Cartesian3.fromDegrees(108.7606140269,34.0321282057,100);
 
         // 用于设置小车方向
         let hpRoll = new Cesium.HeadingPitchRoll(0,0,153.9);
@@ -88,7 +88,8 @@
             moveUp:false,
             moveDown:false,
             moveLeft:false,
-            moveRight:false
+            moveRight:false,
+            fire:false
         };
 
         // 根据键盘按键返回标志
@@ -110,6 +111,7 @@
                     flag.moveDown = value;
                     // 下
                     break;
+
             }
         }
 
@@ -120,6 +122,24 @@
         document.addEventListener('keyup',(e)=>{
             setFlagStatus(e, false);
         });
+        document.onkeyup=function(e){
+
+            e=e?e:window.event;
+            if (e.keyCode == 32 && position_Missile.equals(position)) {
+
+                flag.fire = true;
+            }
+        };
+        let hpRoll_Missile = hpRoll;
+        let position_Missile = position;
+        let speedVector_Missile = speedVector;
+        let speed_Missile = 60;
+        let missilePrimitive = scene.primitives.add(Cesium.Model.fromGltf({
+            url: '../Models/f-35_jsf_stovl.gltf',
+            modelMatrix: Cesium.Transforms.headingPitchRollToFixedFrame(position_Missile, hpRoll_Missile, Cesium.Ellipsoid.WGS84, fixedFrameTransforms),
+            scale : 40
+        }));
+        let count =0;
         // 对帧添加监听事件
         viewer.clock.onTick.addEventListener((clock)=>{
 
@@ -145,6 +165,23 @@
                 }
                 moveCar(false);
             }
+            if (flag.fire&&count<10)
+            {
+
+                missilePrimitive.show = true;
+                fireMissile();
+                count ++;
+            }
+            if (count >= 10)
+            {
+                missilePrimitive.show = false;
+                flag.fire=false;
+                count =0;
+                missilePrimitive.modelMatrix = Cesium.Transforms.headingPitchRollToFixedFrame(position_Missile, hpRoll_Missile, Cesium.Ellipsoid.WGS84, fixedFrameTransforms);
+                hpRoll_Missile = hpRoll;
+                position_Missile = position.clone();
+
+            }
 
         });
 
@@ -160,6 +197,17 @@
             position = Cesium.Matrix4.multiplyByPoint(carPrimitive.modelMatrix ,speedVector, position);
             // 小车移动
             Cesium.Transforms.headingPitchRollToFixedFrame(position, hpRoll, Cesium.Ellipsoid.WGS84, fixedFrameTransforms, carPrimitive.modelMatrix);
+        }
+
+        missilePrimitive.show=false;
+        function fireMissile()
+        {
+            if (position_Missile.equals(position)) console.log("EQUAL!"); else console.log("NO!");
+            speedVector_Missile = Cesium.Cartesian3.multiplyByScalar(Cesium.Cartesian3.UNIT_X,speed_Missile,speedVector_Missile);
+            position_Missile = Cesium.Matrix4.multiplyByPoint(missilePrimitive.modelMatrix ,speedVector_Missile, position_Missile);
+            Cesium.Transforms.headingPitchRollToFixedFrame(position_Missile, hpRoll_Missile, Cesium.Ellipsoid.WGS84, fixedFrameTransforms, missilePrimitive.modelMatrix);
+            //missilePrimitive.destroy();
+
         }
 
     </script>
