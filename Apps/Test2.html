@@ -25,6 +25,8 @@
         animation : false,
         shouldAnimate: true
     });
+    var pos1 = [121.5566469111,30.1594425572,80000];
+    var pos2 = [122.6498717095,29.9691706437,0];
     var czml = [{
         "id" : "document",
         "name" : "CZML Path",
@@ -51,25 +53,42 @@
                 }
             },
             "width" : 8,
-            "leadTime" : 10,
-            "trailTime" : 1000,
+            "leadTime" : 1,
+            "trailTime" : 1,
             "resolution" : 5
         },
         "billboard" : {
-            "image" : "../Pics/npu.png",
-            "scale" : 0.2
+            "image" : "../Pics/233.jpg",
+            "scale" : 0.05
 
         },
         "position" : {
             "epoch" : "2012-08-04T10:00:00Z",
             "cartographicDegrees" : [
-                0,121.5566469111,30.1594425572,80000,
-                10,122.6498717095,29.9691706437,0
+                0,pos1[0],pos1[1],pos1[2],
+                5,pos2[0],pos2[1],pos2[2],
+                10,pos1[0],pos1[1],pos1[2]
 
 
             ]
         }
-    }];
+    },
+        {
+            "id" : "AirCraft",
+            "name" : "AirTest",
+            "model":{
+                "gltf" : "../Models/aircraft-carrier.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" : 64
+            },
+            "position" : {
+                "epoch" : "2012-08-04T10:00:00Z",
+                "cartographicDegrees" : [
+                    0,122.3206093858,29.2177617535,0,
+                    10,122.6760864258,28.6857688023,0
+                ]
+            }
+        }];
 
     var Screen_Center = viewer.entities.add(
         {
@@ -89,7 +108,12 @@
             minimumPixelSize : 64,
             maximumScale : 20000
         },
-        position:  Cesium.Cartesian3.fromDegrees(121.5566469111,30.1594425572,80000)
+        position:  Cesium.Cartesian3.fromDegrees(pos1[0],pos1[1],pos1[2]),
+        path: {
+            leadTime: 1,
+            trailTime: 1,
+
+        }
     });
     var Ground = viewer.entities.add(
         {
@@ -112,15 +136,39 @@
                 minimumPixelSize: 64,
                 maximumScale :20000
             },
-            position: Cesium.Cartesian3.fromDegrees(122.6498717095,29.9691706437,0)
+            position: Cesium.Cartesian3.fromDegrees(pos2[0],pos2[1],pos2[2])
 
         }
     );
+    let flag;
+    var scene_czml = new Cesium.CzmlDataSource.load(czml);
+    function tick() {
+        viewer.render();
+
+        if ((viewer.clock.stopTime.secondsOfDay-viewer.clock.currentTime.secondsOfDay)>1) flag =true;
+        pos1[0]+=0.01;
 
 
-    viewer.dataSources.add(Cesium.CzmlDataSource.load(czml));
+
+        if ((viewer.clock.stopTime.secondsOfDay-viewer.clock.currentTime.secondsOfDay)<1 && flag)
+        {
+            viewer.dataSources.removeAll();
+            czml[1].position.cartographicDegrees[1]=pos1[0];
+            czml[1].position.cartographicDegrees[9]=pos1[0];
+            scene_czml=new Cesium.CzmlDataSource.load(czml);
+            viewer.dataSources.add(scene_czml);
+            flag = false;
+        }
+        Satellite.position = Cesium.Cartesian3.fromDegrees(pos1[0],pos1[1],pos1[2]);
+        Cesium.requestAnimationFrame(tick);
+    }
+    tick();
+
     viewer.camera.setView({
         destination : Cesium.Cartesian3.fromDegrees(122.0897656852, 29.3574916390, 450000.0)});
+    viewer.dataSources.add(scene_czml);
+
+
     /*var scene = viewer.scene;
     var modelMatrix = Cesium.Transforms.eastNorthUpToFixedFrame(
         Cesium.Cartesian3.fromDegrees(108.7606140269, 34.0321282057, 0.0));
