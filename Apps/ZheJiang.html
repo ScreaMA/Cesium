@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8">
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>测试型Cesium</title>
+    <script src="../Build/Cesium/Cesium.js"></script>
+    <style>
+        @import url(../Build/Cesium/Widgets/widgets.css);
+        html, body, #cesiumContainer {
+            width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script>
+    Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5MTdjOGViZS1iODBjLTQxNzgtYjIyOC0xYjRjY2M0MWJiMjMiLCJpZCI6MzQ0MSwiaWF0IjoxNTM3NTA4Nzc5fQ.7jjLy2SJkM55S9Ig-MeOo1Uo13A9ku60J9kR9Zzv88M';
+    let viewer = new Cesium.Viewer('cesiumContainer',{
+        timeline : false,
+        animation : false,
+        shouldAnimate: true
+    });
+    let Satellite_CZML=[{
+        "id" : "document",
+        "name" : "CZML Path",
+        "version" : "1.0",
+        "clock": {
+            "interval": "2012-08-04T10:00:00Z/2012-08-04T10:00:10Z",
+            "currentTime": "2012-08-04T10:00:00Z",
+            "multiplier": 10
+        }
+    },{
+
+        "id" : "Satellite1",
+        "name" : "BEIDOU1",
+        "model":{
+            "gltf" : "../Models/a2100.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" : 64
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3863368145,29.4495516664,20000]
+        }
+
+    }];
+    let Carrrier_CZML = [{
+        "id" : "Carrier1",
+        "name" : "yuchuan1",
+        "model":{
+            "gltf" : "../Models/aircraft-carrier.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" :64
+        },
+        "position" : {
+            "cartographicDegrees" : [122.1171378055,29.5042708125,0]
+        }
+    },
+        {
+            "id" : "Carrier2",
+            "name" : "yuchuan2",
+            "model":{
+                "gltf" : "../Models/aircraft-carrier.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64
+            },
+            "position" : {
+                "cartographicDegrees" : [122.2381716148,29.2536236530,0]
+            }
+        },
+        {
+            "id" : "Carrier3",
+            "name" : "yuchuan3",
+            "model":{
+                "gltf" : "../Models/aircraft-carrier.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64
+            },
+            "position" : {
+                "cartographicDegrees" : [122.4798216836,29.2175882835,0]
+            }
+        }
+    ];
+    let Ground_CZML = [{
+       "id" : "Ground1",
+       "name" : "Ground Station",
+       "position" : {
+           "cartographicDegrees" : [121.8893295969,29.4256943114,0]
+       },
+        "billboard":{
+           "image" : "../Pics/Ground.jpg",
+            "scale" : 0.2,
+
+        },
+        "label":{
+           "text" : "地面站",
+            "scale" : 0.5,
+            "pixelOffset" : {
+               "cartesian2" : [50,-30]
+            }
+        }
+    },
+        {
+            "id" : "Ground2",
+            "name" : "Ground Station_island",
+            "position" : {
+                "cartographicDegrees" : [122.0456271227,29.1619861614,0]
+            },
+            "billboard":{
+                "image" : "../Pics/Ground.jpg",
+                "scale" : 0.2,
+
+            },
+            "label":{
+                "text" : "小岛节点",
+                "scale" : 0.5,
+                "pixelOffset" : {
+                    "cartesian2" : [50,-30]
+                }
+            }
+        }];
+    let Arrow_CZML =[{
+        "id" : "Arrow1",
+        "name" : "Satellite_to_ship_1",
+
+        "polyline" : {
+            "material" : "grid",
+            "width" : 2,
+            "show" : true,
+            "positions" : {
+                "references": ["Satellite1#position", "Carrier1#position"]
+            }
+
+        },
+
+    },{
+        "id" : "Arrow2",
+        "name" : "Satellite_to_ground_1",
+
+        "polyline" : {
+            "material" : "grid",
+            "width" : 2,
+            "show" : true,
+            "positions" : {
+                "references": ["Satellite1#position", "Ground1#position"]
+            }
+
+        }
+    }
+    ];
+    let Shape_CZML =[{
+        "id" : "Ellipse1",
+        "name" : "chuanbang1",
+        "ellipse" : {
+            "semiMajorAxis" : 20000,
+            "semiMinorAxis" : 10000,
+            "material" : {
+                "solidColor" : {
+                    "color" : {
+                        "rgba" :[255,255,255,50]
+                    }
+                }
+            }
+        },
+        "label" :{
+            "text" : "船帮A",
+            "scale" : 0.5
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3370814580,29.2273278357,0]
+        }
+    }];
+    let CZML_USE = new Cesium.CzmlDataSource();
+    CZML_USE.load(Satellite_CZML);
+    CZML_USE.process(Carrrier_CZML);
+    CZML_USE.process(Ground_CZML);
+    CZML_USE.process(Arrow_CZML);
+    CZML_USE.process(Shape_CZML);
+    viewer.dataSources.add(CZML_USE);
+    viewer.camera.setView({
+        destination : Cesium.Cartesian3.fromDegrees(122.3095825677,29.3134881018, 150000.0)
+    });
+
+</script>
+</body>
+</html>
