@@ -27,68 +27,75 @@
     });
     var pos1 = [121.5566469111,30.1594425572,80000];
     var pos2 = [122.6498717095,29.9691706437,0];
-    var czml = [{
+    let czml = [{
         "id" : "document",
         "name" : "CZML Path",
         "version" : "1.0",
         "clock": {
-            "interval": "2012-08-04T10:00:00Z/2012-08-04T10:00:10Z",
+            "interval": "2012-08-04T10:00:00Z/2012-08-04T10:00:20Z",
             "currentTime": "2012-08-04T10:00:00Z",
-            "multiplier": 10
+            "multiplier": 5
         }
     }, {
         "id" : "path",
         "name" : "path with GPS flight data",
         "availability" : "2012-08-04T10:00:00Z/2012-08-04T15:00:00Z",
-        "path" : {
-            "material" : {
-                "polylineOutline" : {
-                    "color" : {
-                        "rgba" : [255, 0, 255, 255]
-                    },
-                    "outlineColor" : {
-                        "rgba" : [0, 255, 255, 255]
-                    },
-                    "outlineWidth" : 5
+        "polyline": {
+            "width": 1,
+            "material": {
+                "solidColor": {
+                    "color": {
+                        "rgba": [
+                            0, 255, 255, 255
+                        ]
+                    }
                 }
             },
-            "width" : 8,
-            "leadTime" : 1,
-            "trailTime" : 1,
-            "resolution" : 5
         },
-        "billboard" : {
-            "image" : "../Pics/233.jpg",
-            "scale" : 0.05
+        "position" : {
+            "references":[
+            "Carrier1#position","Satellite1#position"
+            ]
 
+
+
+        }
+    },{
+        "id" : "Carrier1",
+        "name" : "233",
+        "model" :
+            {
+                "gltf" : "../Models/aircraft-carrier.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" : 64
+            },
+        "position" :
+            {
+                "epoch" : "2012-08-04T10:00:00Z",
+                "cartographicDegrees" : [
+                    0,pos1[0],pos1[1],0,
+                    10,pos2[0],pos2[1],0,
+                    20,pos1[0],pos1[1],0,
+                ]
+            }
+
+    },{
+        "id" : "Satellite1",
+        "name" : "nb",
+        "model" : {
+            "gltf" : "../Models/a2100.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" : 64
         },
         "position" : {
             "epoch" : "2012-08-04T10:00:00Z",
             "cartographicDegrees" : [
                 0,pos1[0],pos1[1],pos1[2],
-                5,pos2[0],pos2[1],pos2[2],
-                10,pos1[0],pos1[1],pos1[2]
-
-
-            ]
-        }
-    },
-        {
-            "id" : "AirCraft",
-            "name" : "AirTest",
-            "model":{
-                "gltf" : "../Models/aircraft-carrier.gltf",
-                "maximumScale" : 20000,
-                "minimumPixelSize" : 64
-            },
-            "position" : {
-                "epoch" : "2012-08-04T10:00:00Z",
-                "cartographicDegrees" : [
-                    0,122.3206093858,29.2177617535,0,
-                    10,122.6760864258,28.6857688023,0
+                10,pos1[0]+0.4,pos1[1]-0.9,pos1[2],
+                20,pos1[0]+1,pos1[1],pos1[2]
                 ]
-            }
-        }];
+        }
+    }];
 
     var Screen_Center = viewer.entities.add(
         {
@@ -106,12 +113,27 @@
         model: {
             uri : "../Models/a2100.gltf",
             minimumPixelSize : 64,
-            maximumScale : 20000
+            maximumScale : 20000,
+            show : false
         },
         position:  Cesium.Cartesian3.fromDegrees(pos1[0],pos1[1],pos1[2]),
         path: {
             leadTime: 1,
             trailTime: 1,
+            material : {
+                polylineOutline : {
+                    color : {
+                        rgba : [255, 0, 255, 255]
+                    },
+                    outlineColor : {
+                        rgba : [0, 255, 255, 255]
+                    },
+                    outlineWidth : 5
+                },
+                width :5
+            },
+
+
 
         }
     });
@@ -126,7 +148,12 @@
             ]),
             material : Cesium.Color.RED.withAlpha(0.5),
             outline : true,
-            outlineColor : Cesium.Color.BLACK}
+            outlineColor : Cesium.Color.BLACK},
+            billboard: {
+                image :"../Pics/npu.png",
+                scale:0.1,
+            },
+            position: Cesium.Cartesian3.fromDegrees(121.6118554117,29.2437372296)
         }
     );
     var Carrier = viewer.entities.add(
@@ -145,12 +172,13 @@
     function tick() {
         viewer.render();
 
-        if ((viewer.clock.stopTime.secondsOfDay-viewer.clock.currentTime.secondsOfDay)>1) flag =true;
-        pos1[0]+=0.002;
+        //if ((viewer.clock.currentTime.secondsOfDay-viewer.clock.startTime.secondsOfDay) % 2 <1) flag =true;
+
+        if (pos1[0]<121.9) pos1[0]+=0.002;
 
 
 
-        if ((viewer.clock.stopTime.secondsOfDay-viewer.clock.currentTime.secondsOfDay)<1 && flag)
+        /*if ((viewer.clock.currentTime.secondsOfDay-viewer.clock.startTime.secondsOfDay) % 2 <1 && flag)
         {
             viewer.dataSources.removeAll();
             czml[1].position.cartographicDegrees[1]=pos1[0];
@@ -158,7 +186,7 @@
             scene_czml=new Cesium.CzmlDataSource.load(czml);
             viewer.dataSources.add(scene_czml);
             flag = false;
-        }
+        }*/
         Satellite.position = Cesium.Cartesian3.fromDegrees(pos1[0],pos1[1],pos1[2]);
         Cesium.requestAnimationFrame(tick);
     }
