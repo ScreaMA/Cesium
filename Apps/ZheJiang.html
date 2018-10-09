@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>测试型Cesium</title>
+    <title>象山县</title>
     <script src="../Build/Cesium/Cesium.js"></script>
     <style>
         @import url(../Build/Cesium/Widgets/widgets.css);
@@ -25,7 +25,7 @@
         animation : false,
         shouldAnimate: true
     });
-    let Satellite_CZML=[{
+    let Air_CZML=[{
         "id" : "document",
         "name" : "CZML Path",
         "version" : "1.0",
@@ -45,10 +45,37 @@
         },
         "position" : {
             "cartographicDegrees" : [122.3863368145,29.4495516664,20000]
+        },
+        "label" :{
+            "text" : "北斗卫星",
+            "scale":0.5,
+            "pixelOffset" : {
+                "cartesian2" : [50,-30]
+            }
         }
 
+
+    },{
+        "id" : "Aircraft1",
+        "name" : "Pilot1",
+        "model":{
+            "gltf" : "../Models/f-35_jsf_cv.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" : 64,
+            "runAnimations" : false
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3340503859,29.5902269899,10000]
+        },
+        "label" :{
+            "text" : "无人机",
+            "scale":0.5,
+            "pixelOffset" : {
+                "cartesian2" : [30,-30]
+            }
+        }
     }];
-    let Carrrier_CZML = [{
+    let Carrier_CZML = [{
         "id" : "Carrier1",
         "name" : "yuchuan1",
         "model":{
@@ -58,6 +85,13 @@
         },
         "position" : {
             "cartographicDegrees" : [122.1171378055,29.5042708125,0]
+        },
+        "label":{
+            "text" : "搜救船",
+            "scale" : 0.5,
+            "pixelOffset" : {
+                "cartesian2" : [40,-40]
+            }
         }
     },
         {
@@ -82,6 +116,30 @@
             },
             "position" : {
                 "cartographicDegrees" : [122.4798216836,29.2175882835,0]
+            }
+        },
+        {
+            "id" : "Carrier4",
+            "name" : "yuchuan4",
+            "model":{
+                "gltf" : "../Models/aircraft-carrier.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64
+            },
+            "position" : {
+                "cartographicDegrees" : [123.0423681641,29.1569585114,0]
+            }
+        },
+        {
+            "id" : "Carrier5",
+            "name" : "yuchuan5",
+            "model":{
+                "gltf" : "../Models/aircraft-carrier.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64
+            },
+            "position" : {
+                "cartographicDegrees" : [122.9801831055,29.4419894662,0]
             }
         }
     ];
@@ -126,9 +184,14 @@
     let Arrow_CZML =[{
         "id" : "Arrow1",
         "name" : "Satellite_to_ship_1",
-
         "polyline" : {
-            "material" : "grid",
+            "material" : {
+                "polylineArrow" :{
+                    "color" : {
+                        "rgba" :[0,255,0,255]
+                    }
+                }
+            },
             "width" : 2,
             "show" : true,
             "positions" : {
@@ -142,8 +205,14 @@
         "name" : "Satellite_to_ground_1",
 
         "polyline" : {
-            "material" : "grid",
-            "width" : 2,
+            "material" : {
+                "polylineArrow" :{
+                    "color" : {
+                        "rgba" :[255,0,0,255]
+                    }
+                }
+            },
+            "width" : 5,
             "show" : true,
             "positions" : {
                 "references": ["Satellite1#position", "Ground1#position"]
@@ -154,7 +223,7 @@
     ];
     let Shape_CZML =[{
         "id" : "Ellipse1",
-        "name" : "chuanbang1",
+        "name" : "chuanbangA",
         "ellipse" : {
             "semiMajorAxis" : 20000,
             "semiMinorAxis" : 10000,
@@ -173,10 +242,35 @@
         "position" : {
             "cartographicDegrees" : [122.3370814580,29.2273278357,0]
         }
-    }];
+    },
+        {
+            "id" : "Ellipse2",
+            "name" : "chuanbangB",
+            "ellipse" : {
+                "semiMajorAxis" : 12000,
+                "semiMinorAxis" : 25000,
+                "material" : {
+                    "solidColor" : {
+                        "color" : {
+                            "rgba" :[255,255,255,50]
+                        }
+                    }
+                },
+                "rotation" : 30/180
+            },
+            "label" :{
+                "text" : "船帮B",
+                "scale" : 0.5
+            },
+            "position" : {
+                "cartographicDegrees" : [123.0166625977,29.3271147630,0]
+            }
+        }
+    ];
+
     let CZML_USE = new Cesium.CzmlDataSource();
-    CZML_USE.load(Satellite_CZML);
-    CZML_USE.process(Carrrier_CZML);
+    CZML_USE.load(Air_CZML);
+    CZML_USE.process(Carrier_CZML);
     CZML_USE.process(Ground_CZML);
     CZML_USE.process(Arrow_CZML);
     CZML_USE.process(Shape_CZML);
