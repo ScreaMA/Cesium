@@ -276,7 +276,12 @@
     CZML_USE.process(Shape_CZML);
     viewer.dataSources.add(CZML_USE);
     viewer.camera.setView({
-        destination : Cesium.Cartesian3.fromDegrees(122.3095825677,29.3134881018, 150000.0)
+        destination : Cesium.Cartesian3.fromDegrees(122.5469970703,28.3043806830, 30000.0),
+        orientation: {
+            heading : Cesium.Math.toRadians(0), // east, default value is 0.0 (north)
+            pitch : Cesium.Math.toRadians(-15),    // default value (looking down)
+            roll : 0.0                             // default value
+        }
     });
 
 </script>
