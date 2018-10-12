@@ -19,7 +19,22 @@
 <body>
   <div id="cesiumContainer"></div>
   <script>
-    var viewer = new Cesium.Viewer('cesiumContainer');
+    let url = "localhost";
+    let url2 = "10.25.233.8";
+    var viewer = new Cesium.Viewer('cesiumContainer',{
+        imageryProvider:new Cesium.WebMapServiceImageryProvider({
+            url: 'http://'+url2+':8886/geoserver/wms?',   //服务地址
+            layers: 'tianditu',                    //服务图层，需要修改成你自己发布的名称
+            parameters: {
+                service: 'WMS',
+                format: 'image/png',
+                transparent: true
+            }
+        ,baseLayerPicker: false
+    })});
+
+
+
   </script>
 </body>
 </html>
