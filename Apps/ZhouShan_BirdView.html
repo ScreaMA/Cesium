@@ -25,13 +25,9 @@
         animation : false,
         shouldAnimate: true,
         baseLayerPicker: false,
-        imageryProvider: new Cesium.createTileMapServiceImageryProvider({
-            url : "http://t0.tianditu.com/img_c/wmts?",
-            layer : 'img',
-            style : 'default',
-            format : 'tiles',
-            tileMatrixSetID : "w",
-            maximumLevel: 18
+        imageryProvider: new Cesium.UrlTemplateImageryProvider({
+            url : "https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+
         })
     });
     let Air_CZML=[{
