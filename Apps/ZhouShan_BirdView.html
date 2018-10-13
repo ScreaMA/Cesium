@@ -23,7 +23,14 @@
     let viewer = new Cesium.Viewer('cesiumContainer',{
         timeline : false,
         animation : false,
-        shouldAnimate: true
+        shouldAnimate: true,
+        baseLayerPicker: false,
+        imageryProvider: new Cesium.WebMapTileServiceImageryProvider({
+            url: "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
+            layer: "tdtBasicLayer",
+            style: "default",
+            format: "image/jpeg",
+            tileMatrixSetID: "GoogleMapsCompatible"})
     });
     let Air_CZML=[{
         "id" : "document",
