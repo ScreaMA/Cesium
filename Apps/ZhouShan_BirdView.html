@@ -25,12 +25,14 @@
         animation : false,
         shouldAnimate: true,
         baseLayerPicker: false,
-        imageryProvider: new Cesium.WebMapTileServiceImageryProvider({
-            url: "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
-            layer: "tdtBasicLayer",
-            style: "default",
-            format: "image/jpeg",
-            tileMatrixSetID: "GoogleMapsCompatible"})
+        imageryProvider: new Cesium.createTileMapServiceImageryProvider({
+            url : "http://t0.tianditu.com/img_c/wmts?",
+            layer : 'img',
+            style : 'default',
+            format : 'tiles',
+            tileMatrixSetID : "w",
+            maximumLevel: 18
+        })
     });
     let Air_CZML=[{
         "id" : "document",
