@@ -274,9 +274,257 @@
             }
         }
     ];
+    let Air2_CZML=[
+    {
+
+        "id" : "Satellite1_2",
+        "name" : "BEIDOU1",
+        "model":{
+            "gltf" : "../Models/a2100.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" : 64
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3863368145,29.4495516664,20000]
+        },
+        "label" :{
+            "text" : "北斗卫星",
+            "scale":0.5,
+            "pixelOffset" : {
+                "cartesian2" : [50,-30]
+            }
+        }
+
+
+    },{
+        "id" : "Aircraft1_2",
+        "name" : "Pilot1",
+        "model":{
+            "gltf" : "../Models/rq-4a_globalhawk.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" : 40,
+            "runAnimations" : false
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3340503859,29.5902269899,10000]
+        },
+        "label" :{
+            "text" : "无人机",
+            "scale":0.5,
+            "pixelOffset" : {
+                "cartesian2" : [30,-30]
+            }
+        },
+        "orientation": {
+            "unitQuaternion": [ 0.707, 0.0, 0.707, 0.0 ]
+        }
+    }];
+    let Carrier2_CZML = [{
+        "id" : "Carrier1_2",
+        "name" : "yuchuan1",
+        "model":{
+            "gltf" : "../Models/aircraft-carrier.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" :64
+        },
+        "position" : {
+            "cartographicDegrees" : [122.1171378055,29.5042708125,0]
+        },
+        "label":{
+            "text" : "搜救船",
+            "scale" : 0.5,
+            "pixelOffset" : {
+                "cartesian2" : [40,-40]
+            }
+        }
+    },
+        {
+            "id" : "Carrier2_2",
+            "name" : "yuchuan2",
+            "model":{
+                "gltf" : "../Models/ship.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64,
+                "runAnimations" : false
+            },
+            "position" : {
+                "cartographicDegrees" : [122.2381716148,29.2536236530,0]
+            }
+        },
+        {
+            "id" : "Carrier3_2",
+            "name" : "yuchuan3",
+            "model":{
+                "gltf" : "../Models/ship.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64,
+                "runAnimations" : false
+            },
+            "position" : {
+                "cartographicDegrees" : [122.4798216836,29.2175882835,0]
+            }
+        },
+        {
+            "id" : "Carrier4_2",
+            "name" : "yuchuan4",
+            "model":{
+                "gltf" : "../Models/ship.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64,
+                "runAnimations" : false
+            },
+            "position" : {
+                "cartographicDegrees" : [123.0423681641,29.1569585114,0]
+            }
+        },
+        {
+            "id" : "Carrier5_2",
+            "name" : "yuchuan5",
+            "model":{
+                "gltf" : "../Models/ship.gltf",
+                "maximumScale" : 20000,
+                "minimumPixelSize" :64,
+                "runAnimations" : false
+            },
+            "position" : {
+                "cartographicDegrees" : [122.9801831055,29.4419894662,0]
+            }
+        }
+    ];
+    let Ground2_CZML = [{
+        "id" : "Ground1_2",
+        "name" : "Ground Station",
+        "position" : {
+            "cartographicDegrees" : [121.8893295969,29.4256943114,0]
+        },
+        "billboard":{
+            "image" : "../Pics/Ground.jpg",
+            "scale" : 0.2,
+
+        },
+        "label":{
+            "text" : "地面站",
+            "scale" : 0.5,
+            "pixelOffset" : {
+                "cartesian2" : [50,-30]
+            }
+        }
+    },
+        {
+            "id" : "Ground2_2",
+            "name" : "Ground Station_island",
+            "position" : {
+                "cartographicDegrees" : [122.0456271227,29.1619861614,0]
+            },
+            "billboard":{
+                "image" : "../Pics/Ground.jpg",
+                "scale" : 0.2,
+
+            },
+            "label":{
+                "text" : "小岛节点",
+                "scale" : 0.5,
+                "pixelOffset" : {
+                    "cartesian2" : [50,-30]
+                }
+            }
+        }];
+    let Arrow2_CZML =[{
+        "id" : "Arrow1_2",
+        "name" : "Satellite_to_ship_1",
+        "polyline" : {
+            "material" : {
+                "polylineArrow" :{
+                    "color" : {
+                        "rgba" :[0,255,0,255]
+                    }
+                }
+            },
+            "width" : 2,
+            "show" : true,
+            "positions" : {
+                "references": ["Satellite1#position", "Carrier1#position"]
+            }
+
+        },
+
+    },{
+        "id" : "Arrow2_2",
+        "name" : "Satellite_to_ground_1",
+
+        "polyline" : {
+            "material" : {
+                "polylineArrow" :{
+                    "color" : {
+                        "rgba" :[255,0,0,255]
+                    }
+                }
+            },
+            "width" : 5,
+            "show" : true,
+            "positions" : {
+                "references": ["Satellite1#position", "Ground1#position"]
+            }
+
+        }
+    }
+    ];
+    let Shape2_CZML =[{
+        "id" : "Ellipse1_2",
+        "name" : "chuanbangA",
+        "ellipse" : {
+            "semiMajorAxis" : 20000,
+            "semiMinorAxis" : 10000,
+            "material" : {
+                "solidColor" : {
+                    "color" : {
+                        "rgba" :[255,255,255,50]
+                    }
+                }
+            }
+        },
+        "label" :{
+            "text" : "船帮D",
+            "scale" : 0.5
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3370814580,29.2273278357,0]
+        }
+    },
+        {
+            "id" : "Ellipse2_2",
+            "name" : "chuanbangB",
+            "ellipse" : {
+                "semiMajorAxis" : 12000,
+                "semiMinorAxis" : 25000,
+                "material" : {
+                    "solidColor" : {
+                        "color" : {
+                            "rgba" :[255,255,255,50]
+                        }
+                    }
+                },
+                "rotation" : 30/180
+            },
+            "label" :{
+                "text" : "船帮C",
+                "scale" : 0.5
+            },
+            "position" : {
+                "cartographicDegrees" : [123.0166625977,29.3271147630,0]
+            }
+        }
+    ];
 
     let CZML_USE = new Cesium.CzmlDataSource();
     CZML_USE.load(Air_CZML);
+    CZML_USE.process(Air2_CZML);
+    CZML_USE.process(Carrier2_CZML);
+    CZML_USE.process(Ground2_CZML);
+    CZML_USE.process(Arrow2_CZML);
+    CZML_USE.process(Shape2_CZML);
+
+
     CZML_USE.process(Carrier_CZML);
     CZML_USE.process(Ground_CZML);
     CZML_USE.process(Arrow_CZML);
