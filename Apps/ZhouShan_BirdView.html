@@ -11,6 +11,7 @@
     <script src="../Build/Cesium/Cesium.js"></script>
     <style>
         @import url(../Build/Cesium/Widgets/widgets.css);
+        @import url(../Build/Cesium/Widgets/BaseLayerPicker/BaseLayerPicker.css);
         html, body, #cesiumContainer {
             width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
         }
@@ -18,18 +19,64 @@
 </head>
 <body>
 <div id="cesiumContainer"></div>
+<div id="baseLayerPickerContainer" style="position:absolute;top:45px;right:24px;width:38px;height:38px;"></div>
 <script>
     Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5MTdjOGViZS1iODBjLTQxNzgtYjIyOC0xYjRjY2M0MWJiMjMiLCJpZCI6MzQ0MSwiaWF0IjoxNTM3NTA4Nzc5fQ.7jjLy2SJkM55S9Ig-MeOo1Uo13A9ku60J9kR9Zzv88M';
+
     let viewer = new Cesium.Viewer('cesiumContainer',{
         timeline : false,
         animation : false,
         shouldAnimate: true,
-        baseLayerPicker: false,
-        imageryProvider: new Cesium.UrlTemplateImageryProvider({
-            url : "https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+        baseLayerPicker: false
 
-        })
     });
+    var imageryViewModels = [];
+    imageryViewModels.push(new Cesium.ProviderViewModel({
+        name : '微软BING',
+        iconUrl : Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/bingAerial.png'),
+        tooltip : 'Bing',
+        creationFunction : function() {
+            return new Cesium.BingMapsImageryProvider({
+                url : 'https://dev.virtualearth.net',
+                key : 'ArYhtvJzTb032xUtnz5g4QDO3V-4p2w6kAwci7FBUK62U1lYa3NSFqj6zir3zCbj',
+                mapStyle : Cesium.BingMapsStyle.AERIAL
+            });
+        }
+    }));
+    imageryViewModels.push(new Cesium.ProviderViewModel({
+        name : '高德地图',
+        iconUrl : Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/openStreetMap.png'),
+        tooltip : '还算牛逼的高德地图',
+        creationFunction : function() {
+            return new Cesium.UrlTemplateImageryProvider({
+                url : 'https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}'
+            });
+        }
+    }));
+
+    imageryViewModels.push(new Cesium.ProviderViewModel({
+        name : '天地图',
+        iconUrl : Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/naturalEarthII.png'),
+        tooltip : '国产天地图',
+        creationFunction : function() {
+            return new Cesium.WebMapTileServiceImageryProvider({
+                url: "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles"
+            });
+        }
+    }));
+
+    //Create a CesiumWidget without imagery, if you haven't already done so.
+    var cesiumWidget = new Cesium.CesiumWidget('cesiumContainer', { imageryProvider: false });
+
+    //Finally, create the baseLayerPicker widget using our view models.
+    var layers = cesiumWidget.imageryLayers;
+    var baseLayerPicker = new Cesium.BaseLayerPicker('baseLayerPickerContainer', {
+        globe :viewer.scene.globe,
+        imageryProviderViewModels : imageryViewModels
+    });
+
+
+
     let Air_CZML=[{
         "id" : "document",
         "name" : "CZML Path",
