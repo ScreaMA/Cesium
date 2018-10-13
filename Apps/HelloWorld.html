@@ -22,16 +22,21 @@
     let url = "localhost";
     let url2 = "10.25.233.8";
     var viewer = new Cesium.Viewer('cesiumContainer',{
-        imageryProvider:new Cesium.WebMapServiceImageryProvider({
+        /*imageryProvider:new Cesium.WebMapServiceImageryProvider({
             url: 'http://'+url2+':8886/geoserver/wms?',   //服务地址
-            layers: 'tianditu',                    //服务图层，需要修改成你自己发布的名称
+            layers: 'tainditu',                    //服务图层，需要修改成你自己发布的名称
             parameters: {
                 service: 'WMS',
                 format: 'image/png',
                 transparent: true
-            }
+            }*/
+        imageryProvider:new Cesium.createTileMapServiceImageryProvider({
+            url:'F:/MapDown/tianditu/satellite',
+            fileExtension: 'jpg',
+            rectangle :
+        })
         ,baseLayerPicker: false
-    })});
+    });
 
 
 
