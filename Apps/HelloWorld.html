@@ -23,11 +23,16 @@
     let url2 = "10.25.233.8";
     var viewer = new Cesium.Viewer('cesiumContainer',{
         imageryProvider:new Cesium.UrlTemplateImageryProvider({
-            url:'../satellite2/{z}/{x}/{y}.jpg',
+            url:'../satellite/{z}/{x}/{y}.jpg',
             fileExtension : "jpg"
         })
-        ,baseLayerPicker: false
+        ,baseLayerPicker: false,
+        terrainProvider : new Cesium.CesiumTerrainProvider({
+            url : "../Terrain/"
+        })
     });
+
+
 
 
 
