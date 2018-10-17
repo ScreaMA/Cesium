@@ -14,10 +14,37 @@
       html, body, #cesiumContainer {
           width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
       }
+      #longitude_show {
+          left : 30px;
+          top: 20px;
+          position: absolute;
+          background-color: white;
+          font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+          border-radius: 3px;
+      }
+      #latitude_show {
+          left : 30px;
+          top: 45px;
+          position: absolute;
+          background-color: white;
+          font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+          border-radius: 3px;
+      }
+      #altitude_show {
+          left : 30px;
+          top: 70px;
+          position: absolute;
+          background-color: white;
+          font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+          border-radius: 3px;
+      }
   </style>
 </head>
 <body>
   <div id="cesiumContainer"></div>
+  <div id="longitude_show"></div>
+  <div id="latitude_show"></div>
+  <div id="altitude_show"></div>
   <script>
     let url = "localhost";
     let url2 = "10.25.233.8";
@@ -31,6 +58,24 @@
             url : "../Terrain/"
         })
     });
+    var handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+    var longitude_show=document.getElementById('longitude_show');
+    var latitude_show=document.getElementById('latitude_show');
+    var altitude_show=document.getElementById('altitude_show');
+
+    handler.setInputAction(function(movement) {
+        var ray=viewer.camera.getPickRay(movement.endPosition);
+        var cartesian=viewer.scene.globe.pick(ray,viewer.scene);
+        var cartographic=Cesium.Cartographic.fromCartesian(cartesian);
+        var lng=Cesium.Math.toDegrees(cartographic.longitude);//经度值
+        var lat=Cesium.Math.toDegrees(cartographic.latitude);//纬度值
+        var mapPosition={x:lng,y:lat,z:cartographic.height};//height的值为地形高度。
+        longitude_show.innerText = "经度:"+lng;
+        latitude_show.innerText = "纬度:"+lat;
+        altitude_show.innerText = "海拔:"+cartographic.height;
+        console.log(mapPosition);
+    }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
 
 
 
