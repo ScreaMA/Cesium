@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>Hello World!</title>
   <script src="../Build/Cesium/Cesium.js"></script>
+  <script src="./Convert.js"></script>
+  <script src="https://webapi.amap.com/maps?v=1.4.10&key=4cecb5dc0fd86b23e5ee94a2b6c0a3bd"></script>
   <style>
       @import url(../Build/Cesium/Widgets/widgets.css);
       html, body, #cesiumContainer {
@@ -50,7 +52,7 @@
     let url2 = "10.25.233.8";
     var viewer = new Cesium.Viewer('cesiumContainer',{
         imageryProvider:new Cesium.UrlTemplateImageryProvider({
-            url:'../satellite/{z}/{x}/{y}.jpg',
+            url:'../satellite_en/{z}/{x}/{y}.jpg',
             fileExtension : "jpg"
         })
         ,baseLayerPicker: false,
@@ -58,7 +60,24 @@
             url : "../Terrain/"
         })
     });
-    var handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+    /*viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
+        url:'../roadmap/{z}/{x}/{y}.png',
+        fileExtension : "png",
+        parameters : {
+            transparent : true
+        }
+
+    }));*/
+
+    viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
+        url: "http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
+        layer: "tdtAnnoLayer",
+        style: "default",
+        format: "image/jpeg",
+        tileMatrixSetID: "GoogleMapsCompatible"
+    }));
+
+    /*var handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
     var longitude_show=document.getElementById('longitude_show');
     var latitude_show=document.getElementById('latitude_show');
     var altitude_show=document.getElementById('altitude_show');
@@ -74,11 +93,22 @@
         latitude_show.innerText = "纬度:"+lat;
         altitude_show.innerText = "海拔:"+cartographic.height;
         console.log(mapPosition);
-    }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+    }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);*/
 
     viewer.camera.setView({
         destination : Cesium.Cartesian3.fromDegrees(108.7608340097,34.0327445070,4000)
-    })
+    });
+    var gps = [108.761157,34.03524];
+
+    viewer.entities.add({
+        position : Cesium.Cartesian3.fromDegrees(108.761157,34.03524),
+        point : {
+            pixelSize : 2,
+            color : Cesium.Color.YELLOW
+        }
+    });
+
+
 
 
 
