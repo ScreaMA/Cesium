@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <title>Hello World!</title>
   <script src="../Build/CesiumUnminified/Cesium.js"></script>
-  <script src="./Convert.js"></script>
   <script src="https://webapi.amap.com/maps?v=1.4.10&key=4cecb5dc0fd86b23e5ee94a2b6c0a3bd"></script>
   <style>
       @import url(../Build/Cesium/Widgets/widgets.css);
@@ -52,7 +51,7 @@
     let url2 = "10.25.233.8";
     var viewer = new Cesium.Viewer('cesiumContainer',{
         imageryProvider:new Cesium.UrlTemplateImageryProvider({
-            url:'../satellite_en/{z}/{x}/{y}.jpg',
+            url:'../satellite/{z}/{x}/{y}.jpg',
             fileExtension : "jpg"
         })
         ,baseLayerPicker: false,
