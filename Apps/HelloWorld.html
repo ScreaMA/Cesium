@@ -59,22 +59,23 @@
             url : "../Terrain/"
         })
     });
-    /*viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
-        url:'../roadmap/{z}/{x}/{y}.png',
+
+    viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
+        url:'../Annos/{z}/{x}/{y}.png',
         fileExtension : "png",
         parameters : {
             transparent : true
         }
 
-    }));*/
+    }));
 
-    viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
+    /*viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
         url: "http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
         layer: "tdtAnnoLayer",
         style: "default",
         format: "image/jpeg",
         tileMatrixSetID: "GoogleMapsCompatible"
-    }));
+    }));*/
 
     /*var handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
     var longitude_show=document.getElementById('longitude_show');
