@@ -255,28 +255,19 @@ area washes and organic edges over a paper texture to add warm pop to any map.\n
         }
     }));
 
-    imageryViewModels.push(new  Cesium.ProviderViewModel({
-        name : 'WGS84 Ellipsoid',
-        iconUrl : Cesium.buildModuleUrl('Widgets/Images/TerrainProviders/Ellipsoid.png'),
-        tooltip : 'WGS84 standard ellipsoid, also known as EPSG:4326',
-        category: 'Terrain',
+    /*imageryViewModels.push(new Cesium.ProviderViewModel({
+        name : '离线地图',
+        iconUrl : 'img',
+        tooltip : '国产天地图',
+        category : '国内常用',
         creationFunction : function() {
-            return new Cesium.EllipsoidTerrainProvider();
-        }
-    }));
-
-    imageryViewModels.push(new  Cesium.ProviderViewModel({
-        name : 'Cesium World Terrain',
-        iconUrl : Cesium.buildModuleUrl('Widgets/Images/TerrainProviders/CesiumWorldTerrain.png'),
-        tooltip : 'High-resolution global terrain tileset curated from several datasources and hosted by Cesium ion',
-        category: 'Terrain',
-        creationFunction : function(){
-            return Cesium.createWorldTerrain({
-                requestWaterMask: true,
-                requestVertexNormals: true
+            return new Cesium.WebMapTileServiceImageryProvider({
+                url: "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles"
             });
         }
-    }));
+    }));*/
+
+
 
     //Create a CesiumWidget without imagery, if you haven't already done so.
     var cesiumWidget = new Cesium.CesiumWidget('cesiumContainer', { imageryProvider: false });
