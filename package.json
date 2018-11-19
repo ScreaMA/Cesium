@@ -30,6 +30,7 @@
     "email": "cesium-dev@googlegroups.com"
   },
   "dependencies": {
+    "mysql": "^2.16.0",
     "requirejs": "^2.3.2"
   },
   "devDependencies": {
