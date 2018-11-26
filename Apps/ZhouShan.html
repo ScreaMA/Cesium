@@ -267,7 +267,27 @@ area washes and organic edges over a paper texture to add warm pop to any map.\n
         }
     }));*/
 
-
+    var terrainViewModels = [];
+    terrainViewModels.push(new Cesium.ProviderViewModel({
+        name : 'WGS84 Ellipsoid',
+        iconUrl : Cesium.buildModuleUrl('Widgets/Images/TerrainProviders/Ellipsoid.png'),
+        tooltip : 'WGS84 standard ellipsoid, also known as EPSG:4326',
+        category: '卫星测量',
+        creationFunction : function() {
+            return new Cesium.EllipsoidTerrainProvider();
+        }
+    }));
+    terrainViewModels.push(new Cesium.ProviderViewModel({
+        name : '测试用离线地形',
+        iconUrl : Cesium.buildModuleUrl('Widgets/Images/TerrainProviders/CesiumWorldTerrain.png'),
+        tooltip : 'High-resolution global terrain tileset curated from several datasources and hosted by Cesium ion',
+        category: '卫星测量',
+        creationFunction : function(){
+            return new Cesium.CesiumTerrainProvider({
+                url : "../Terrain/"
+            })
+        }
+    }));
 
     //Create a CesiumWidget without imagery, if you haven't already done so.
     var cesiumWidget = new Cesium.CesiumWidget('cesiumContainer', { imageryProvider: false });
@@ -276,7 +296,8 @@ area washes and organic edges over a paper texture to add warm pop to any map.\n
     var layers = cesiumWidget.imageryLayers;
     var baseLayerPicker = new Cesium.BaseLayerPicker('baseLayerPickerContainer', {
         globe :viewer.scene.globe,
-        imageryProviderViewModels : imageryViewModels
+        imageryProviderViewModels : imageryViewModels,
+        terrainProviderViewModels: terrainViewModels
     });
 
     viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
