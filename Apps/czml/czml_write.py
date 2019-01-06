@@ -1,3 +1,4 @@
+# coding=utf-8
 import mysql.connector
 import time
 from czml import czml
@@ -46,7 +47,7 @@ while (1):
         ICAO = obj[1]
         longitude = obj[2]
         latitude = obj[3]
-        height =0 
+        height =obj[4]
         create(ICAO,longitude,latitude,height)
         # Write the CZML document to a file
         filename = "test.czml"
