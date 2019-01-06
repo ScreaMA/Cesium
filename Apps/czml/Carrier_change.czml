@@ -1,0 +1,1 @@
+[{"name": "yuchuan1", "position": {"cartographicDegrees": [122.1171378055, 29.5042708125, 20000]}, "model": {"minimumPixelSize": 64, "gltf": "../../Models/aircraft-carrier.gltf", "maximumScale": 20000}, "label": {"text": "\u641c\u6551\u8239", "pixelOffset": {"cartesian2": [40, -40]}, "scale": 0.5}, "id": "Carrier1"}]

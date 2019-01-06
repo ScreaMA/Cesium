@@ -1,0 +1,36 @@
+[{
+        "id" : "Ground1",
+        "name" : "Ground Station",
+        "position" : {
+            "cartographicDegrees" : [121.8893295969,29.4256943114,0]
+        },
+        "billboard":{
+            "image" : "../../Pics/Ground.jpg",
+            "scale" : 0.2
+        },
+        "label":{
+            "text" : "地面站",
+            "scale" : 0.5,
+            "pixelOffset" : {
+               "cartesian2" : [50,-30]
+            }
+        }
+    },{
+            "id" : "Ground2",
+            "name" : "Ground Station_island",
+            "position" : {
+                "cartographicDegrees" : [122.0456271227,29.1619861614,0]
+            },
+            "billboard":{
+                "image" : "../../Pics/Ground.jpg",
+                "scale" : 0.2
+            },
+            "label":{
+                "text" : "小岛节点",
+                "scale" : 0.5,
+                "pixelOffset" : {
+                    "cartesian2" : [50,-30]
+                }
+            }
+        }
+]

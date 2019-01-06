@@ -1,0 +1,50 @@
+[{
+        "id" : "document",
+        "name" : "CZML Path",
+        "version" : "1.0",
+        "clock": {
+            "interval": "2012-08-04T10:00:00Z/2012-08-04T10:00:10Z",
+            "currentTime": "2012-08-04T10:00:00Z",
+            "multiplier": 10
+        }
+    },{
+        "id" : "Satellite1",
+        "name" : "BEIDOU1",
+        "model":{
+            "gltf" : "../../Models/a2100.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" : 64
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3863368145,29.4495516664,20000]
+        },
+        "label" :{
+            "text" : "北斗卫星",
+            "scale":0.5,
+            "pixelOffset" : {
+                "cartesian2" : [50,-30]
+            }
+        }
+    },{
+        "id" : "Aircraft1",
+        "name" : "Pilot1",
+        "model":{
+            "gltf" : "../../Models/rq-4a_globalhawk.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" : 40,
+            "runAnimations" : false
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3340503859,29.5902269899,10000]
+        },
+        "label" :{
+            "text" : "无人机",
+            "scale":0.5,
+            "pixelOffset" : {
+                "cartesian2" : [30,-30]
+            }
+        },
+        "orientation": {
+            "unitQuaternion": [ 0.707, 0.0, 0.707, 0.0 ]
+        }
+    }]

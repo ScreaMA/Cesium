@@ -1,0 +1,46 @@
+[{
+        "id" : "Ellipse1",
+        "name" : "chuanbangA",
+        "ellipse" : {
+            "semiMajorAxis" : 20000,
+            "semiMinorAxis" : 10000,
+            "material" : {
+                "solidColor" : {
+                    "color" : {
+                        "rgba" :[255,255,255,50]
+                    }
+                }
+            }
+        },
+        "label" :{
+            "text" : "船帮A",
+            "scale" : 0.5
+        },
+        "position" : {
+            "cartographicDegrees" : [122.3370814580,29.2273278357,0]
+        }
+    },
+        {
+            "id" : "Ellipse2",
+            "name" : "chuanbangB",
+            "ellipse" : {
+                "semiMajorAxis" : 12000,
+                "semiMinorAxis" : 25000,
+                "material" : {
+                    "solidColor" : {
+                        "color" : {
+                            "rgba" :[255,255,255,50]
+                        }
+                    }
+                },
+                "rotation" : 30/180
+            },
+            "label" :{
+                "text" : "船帮B",
+                "scale" : 0.5
+            },
+            "position" : {
+                "cartographicDegrees" : [123.0166625977,29.3271147630,0]
+            }
+        }
+    ]

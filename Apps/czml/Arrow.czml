@@ -1,0 +1,47 @@
+[{
+        "id" : "document",
+        "name" : "Arrow",
+        "version" : "1.0",
+        "clock": {
+            "interval": "2012-08-04T10:00:00Z/2012-08-04T10:00:10Z",
+            "currentTime": "2012-08-04T10:00:00Z",
+            "multiplier": 10
+        }
+    },{
+        "id" : "Arrow1",
+        "name" : "Satellite_to_ship_1",
+        "polyline" : {
+            "material" : {
+                "polylineArrow" :{
+                    "color" : {
+                        "rgba" :[0,255,0,255]
+                    }
+                }
+            },
+            "width" : 2,
+            "show" : true,
+            "positions" : {
+                "references": ["Satellite1#position", "Carrier1#position"]
+            }
+
+        }
+
+    },{
+        "id" : "Arrow2",
+        "name" : "Satellite_to_ground_1",
+        "polyline" : {
+            "material" : {
+                "polylineArrow" :{
+                    "color" : {
+                        "rgba" :[255,0,0,255]
+                    }
+                }
+            },
+            "width" : 5,
+            "show" : true,
+            "positions" : {
+                "references": ["Satellite1#position", "Ground1#position"]
+            }
+        }
+    }
+    ]

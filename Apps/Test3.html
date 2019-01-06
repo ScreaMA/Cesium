@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8">
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>象山县</title>
+    <script src="../Build/Cesium/Cesium.js"></script>
+    <style>
+        @import url(../Build/Cesium/Widgets/widgets.css);
+        html, body, #cesiumContainer {
+            width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<script>
+    Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5MTdjOGViZS1iODBjLTQxNzgtYjIyOC0xYjRjY2M0MWJiMjMiLCJpZCI6MzQ0MSwiaWF0IjoxNTM3NTA4Nzc5fQ.7jjLy2SJkM55S9Ig-MeOo1Uo13A9ku60J9kR9Zzv88M';
+    let viewer = new Cesium.Viewer('cesiumContainer',{
+        timeline : false,
+        animation : false,
+        shouldAnimate: false
+    });
+
+
+    let CZML_USE = new Cesium.CzmlDataSource();
+    viewer.dataSources.add(CZML_USE);
+    var t=0;
+    function tick() {
+        viewer.render();
+        t++;
+        if (t===65)
+        {
+            CZML_USE.load('./czml/test.czml');
+        }
+        if (t>70)
+        {
+//            CZML_USE.process('./czml/Ground.czml');
+//            CZML_USE.process('./czml/Carrier_change.czml');
+//            CZML_USE.process('./czml/Arrow.czml');
+//            CZML_USE.process('./czml/Shape.czml');
+            t=0;
+        }
+        Cesium.requestAnimationFrame(tick);
+    }
+    tick();
+    /*
+    CZML_USE.load('./czml/Air.czml');
+    CZML_USE.process('./czml/Carrier.czml');
+    CZML_USE.process('./czml/Ground.czml');
+
+    CZML_USE.process('./czml/Arrow.czml');
+    CZML_USE.process('./czml/Shape.czml');
+    */
+
+
+
+    viewer.camera.setView({
+        destination : Cesium.Cartesian3.fromDegrees(108.7602,34.0317, 200000.0),
+        /*orientation: {
+            heading : Cesium.Math.toRadians(0), // east, default value is 0.0 (north)
+            pitch : Cesium.Math.toRadians(-15),    // default value (looking down)
+            roll : 0.0                             // default value
+        }*/
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+[{
+        "id" : "Carrier1",
+        "name" : "yuchuan1",
+        "model":{
+            "gltf" : "../../Models/aircraft-carrier.gltf",
+            "maximumScale" : 20000,
+            "minimumPixelSize" :64
+        },
+        "position" : {
+            "cartographicDegrees" : [122.1171378055,29.5042708125,0]
+        },
+        "label":{
+            "text" : "搜救船",
+            "scale" : 0.5,
+            "pixelOffset" : {
+                "cartesian2" : [40,-40]
+            }
+        }
+    }]
