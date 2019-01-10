@@ -11,11 +11,11 @@ def create(ICAO,longitude,latitude,height):
     packet2 = czml.CZMLPacket(id = ICAO)
     lb = czml.Label(text=ICAO,show=True)
     lb.scale=0.5
-    #lb.pixelOffset = {'cartesian2':[20,-20]}
+    lb.pixelOffset = {'cartesian2':[30,-20]}
     packet2.label=lb
     packet2.position ={"cartographicDegrees" : [longitude,latitude,height]}
     md = czml.Model()
-    md.gltf = "../../Models/a2100.gltf"
+    md.gltf = "../../Models/b737.glb"
     md.maximumScale = 20000
     md.minimumPixelSize = 64
     packet2.model = md

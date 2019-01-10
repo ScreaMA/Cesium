@@ -33,16 +33,14 @@
     function tick() {
         viewer.render();
         t++;
-        if (t===65)
+        if (t===100)
         {
+            viewer.dataSources.remove(CZML_USE);
             CZML_USE.load('./czml/test.czml');
         }
-        if (t>70)
+        if (t>105)
         {
-//            CZML_USE.process('./czml/Ground.czml');
-//            CZML_USE.process('./czml/Carrier_change.czml');
-//            CZML_USE.process('./czml/Arrow.czml');
-//            CZML_USE.process('./czml/Shape.czml');
+            viewer.dataSources.add(CZML_USE);
             t=0;
         }
         Cesium.requestAnimationFrame(tick);

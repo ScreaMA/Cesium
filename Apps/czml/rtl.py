@@ -92,6 +92,6 @@ while True:
         sql+=" where ICAO=\'"+ICAO_string + '\';'
     print(sql)
     cursor.execute(sql)
-    sql = "delete from rtl_recv where (CURRENT_TIMESTAMP-update_time)>20;"
+    sql = "delete from rtl_recv where (CURRENT_TIMESTAMP-update_time)>60;"
     cursor.execute(sql)
 cnx.close()
