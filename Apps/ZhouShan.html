@@ -250,7 +250,7 @@ area washes and organic edges over a paper texture to add warm pop to any map.\n
         category : '国内常用',
         creationFunction : function() {
             return new Cesium.WebMapTileServiceImageryProvider({
-                url: "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles"
+                url: "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=d3721e37c2639bc930c2ee304d368666"
             });
         }
     }));
@@ -284,7 +284,7 @@ area washes and organic edges over a paper texture to add warm pop to any map.\n
         category: '卫星测量',
         creationFunction : function(){
             return new Cesium.CesiumTerrainProvider({
-                url : "../Terrain/"
+                url : "http://myc0523.oss-cn-shanghai.aliyuncs.com/Terrain2/"
             })
         }
     }));
@@ -301,7 +301,7 @@ area washes and organic edges over a paper texture to add warm pop to any map.\n
     });
 
     viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
-        url: "http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles",
+        url: "http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=d3721e37c2639bc930c2ee304d368666",
         layer: "tdtAnnoLayer",
         style: "default",
         format: "image/jpeg",
